@@ -394,6 +394,22 @@ ItemStages.restrict(<tag:items:chipped:gray_stained_glass>, stageName7);
 ItemStages.restrict(<tag:items:chipped:gray_stained_glass_pane>, stageName7);
 ItemStages.restrict(<tag:items:chipped:white_stained_glass>, stageName7);
 ItemStages.restrict(<tag:items:chipped:white_stained_glass_pane>, stageName7);
+ItemStages.restrict(<item:minecraft:potion>.withTag({Potion: "minecraft:thick"}), "stageName7");
+ItemStages.restrict(<item:minecraft:splash_potion>.withTag({Potion: "minecraft:thick"}), "stageName7");
+ItemStages.restrict(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}), "stageName7");
+
+ItemStages.restrict(<item:minecraft:splash_potion>.withTag({Potion: "minecraft:water"}), "stageName7");
+ItemStages.restrict(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:water"}), "stageName7");
+
+ItemStages.restrict(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}), "stageName7");
+ItemStages.restrict(<item:minecraft:potion>.withTag({Potion: "minecraft:water"}), "stageName7");
+ItemStages.restrict(<item:minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}), "stageName7");
+
+ItemStages.restrict(<item:minecraft:potion>.withTag({Potion: "minecraft:awkward"}), "stageName7");
+
+ItemStages.restrict(<item:minecraft:lingering_potion>.withTag({Potion: "minecraft:mundane"}), "stageName7");
+ItemStages.restrict(<item:minecraft:splash_potion>.withTag({Potion: "minecraft:mundane"}), "stageName7");
+ItemStages.restrict(<item:minecraft:potion>.withTag({Potion: "minecraft:mundane"}), "stageName7");
 ItemStages.restrict(<tag:items:chipped:red_stained_glass>, stageName7);
 ItemStages.restrict(<tag:items:chipped:red_stained_glass_pane>, stageName7);
 ItemStages.restrict(<tag:items:chipped:purple_stained_glass>, stageName7);
@@ -530,7 +546,6 @@ ItemStages.restrict(<item:vintagedelight:cheese_pasta>, stageName7);
 ItemStages.restrict(<item:create:windmill_bearing>, stageName7);
 ItemStages.restrict(<item:create:andesite_alloy>, stageName7);
 ItemStages.restrict(<item:create:hand_crank>, stageName7);
-ItemStages.restrict(<item:create:large_water_wheel>, stageName7);
 ItemStages.restrict(<item:create:water_wheel>, stageName7);
 ItemStages.restrict(<item:create:millstone>, stageName7);
 ItemStages.restrict(<item:create:andesite_casing>, stageName7);
@@ -574,10 +589,6 @@ ItemStages.restrict(<item:magistuarmory:bascinet>, stageName7);
 ItemStages.restrict(<item:magistuarmory:shishak>, stageName7);
 ItemStages.restrict(<item:magistuarmory:gothic_leggings>, stageName7);
 ItemStages.restrict(<item:magistuarmory:gothic_boots>, stageName7);
-ItemStages.restrict(<item:magistuarmory:maximilian_helmet>, stageName7);
-ItemStages.restrict(<item:magistuarmory:maximilian_chestplate>, stageName7);
-ItemStages.restrict(<item:magistuarmory:maximilian_leggings>, stageName7);
-ItemStages.restrict(<item:magistuarmory:maximilian_boots>, stageName7);
 ItemStages.restrict(<item:magistuarmory:sallet>, stageName7);
 ItemStages.restrict(<item:magistuarmory:jousting_boots>, stageName7);
 ItemStages.restrict(<item:magistuarmory:bullhorns_decoration>, stageName7);

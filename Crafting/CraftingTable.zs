@@ -1737,9 +1737,8 @@ craftingTable.addShaped("backpack", <item:sophisticatedbackpacks:gold_backpack>,
     [<tag:items:forge:ingots/steel>, <tag:items:forge:ingots/gold>, <tag:items:forge:ingots/steel>]
 ]);
 craftingTable.addShaped("lea3d2", <item:minecraft:crafting_table>, [
-    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, air],
-    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, air],
-    [air, air, air]
+    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>]
 ]);
 
 craftingTable.addShaped("lead2", <item:minecraft:lead>, [

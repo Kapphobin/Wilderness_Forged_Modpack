@@ -8,11 +8,8 @@ ItemStages.restrict(<item:toughasnails:empty_copper_canteen>, stageName4);
 ItemStages.restrict(<item:toughasnails:copper_dirty_water_canteen>, stageName4);
 ItemStages.restrict(<item:toughasnails:copper_water_canteen>, stageName4);
 ItemStages.restrict(<item:toughasnails:copper_purified_water_canteen>, stageName4);
-ItemStages.restrict(<tag:items:minecraft:boats>, stageName4);
-ItemStages.restrict(<tag:items:minecraft:chest_boats>, stageName4);
 ItemStages.restrict(<item:regions_unexplored:socotra_chest_boat>, stageName4);
 ItemStages.restrict(<item:regions_unexplored:socotra_boat>, stageName4);
-ItemStages.restrict(<tag:items:smallships:ships>, stageName4);
 ItemStages.restrict(<item:alekiships:watercraft_frame_flat>, stageName4);
 ItemStages.restrict(<item:alekiships:watercraft_frame_angled>, stageName4);
 ItemStages.restrict(<item:alekiships:anchor>, stageName4);
@@ -31,6 +28,80 @@ ItemStages.restrict(<item:tconstruct:seared_melter>, stageName4);
 ItemStages.restrict(<item:vinery:oak_wine_rack_small>, stageName4);
 ItemStages.restrict(<item:vinery:oak_wine_rack_big>, stageName4);
 ItemStages.restrict(<item:vinery:oak_wine_rack_mid>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:mauve_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:palm_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:kapok_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:larch_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:palm_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:pine_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:kapok_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:magnolia_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:birch_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:dead_boat>, stageName4);
+
+ItemStages.restrict(<item:quark:blossom_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:cypress_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:cypress_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:mangrove_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:blackwood_chest_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:mangrove_boat>, stageName4);
+
+ItemStages.restrict(<item:regions_unexplored:baobab_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:baobab_boat>, stageName4);
+
+ItemStages.restrict(<item:vinery:dark_cherry_chest_boat>, stageName4);
+
+ItemStages.restrict(<item:quark:blossom_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:dark_oak_chest_boat>, stageName4);
+
+ItemStages.restrict(<item:quark:azalea_chest_boat>, stageName4);
+ItemStages.restrict(<item:quark:azalea_boat>, stageName4);
+
+ItemStages.restrict(<item:boatload:crimson_boat>, stageName4);
+ItemStages.restrict(<item:quark:ancient_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:blackwood_boat>, stageName4);
+ItemStages.restrict(<item:boatload:crimson_chest_boat>, stageName4);
+ItemStages.restrict(<item:quark:ancient_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:acacia_chest_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:birch_chest_boat>, stageName4);
+
+ItemStages.restrict(<item:regions_unexplored:pine_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:larch_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:joshua_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:dead_chest_boat>, stageName4);
+
+ItemStages.restrict(<item:vinery:dark_cherry_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:cherry_chest_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:dark_oak_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:cherry_boat>, stageName4);
+
+ItemStages.restrict(<item:boatload:warped_chest_boat>, stageName4);
+ItemStages.restrict(<item:boatload:warped_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:jungle_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:jungle_chest_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:acacia_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:spruce_chest_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:spruce_boat>, stageName4);
+
+ItemStages.restrict(<item:minecraft:oak_boat>, stageName4);
+ItemStages.restrict(<item:minecraft:oak_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:willow_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:willow_boat>, stageName4);
+
+ItemStages.restrict(<item:regions_unexplored:joshua_boat>, stageName4);
+
+ItemStages.restrict(<item:regions_unexplored:maple_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:redwood_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:maple_boat>, stageName4);
+
+ItemStages.restrict(<item:regions_unexplored:eucalyptus_chest_boat>, stageName4);
+ItemStages.restrict(<item:regions_unexplored:mauve_boat>, stageName4);
 ItemStages.restrict(<item:vinery:spruce_wine_rack_big>, stageName4);
 ItemStages.restrict(<item:vinery:spruce_wine_rack_mid>, stageName4);
 ItemStages.restrict(<item:vinery:birch_wine_rack_small>, stageName4);
@@ -1343,6 +1414,15 @@ ItemStages.restrict(<item:pottery:small_pot_blank>, stageName2);
 ItemStages.restrict(<item:pottery:sealed_pot_black>, stageName2);
 ItemStages.restrict(<item:pottery:sealed_pot_red>, stageName2);
 ItemStages.restrict(<item:pottery:tall_pot_green>, stageName2);
+ItemStages.restrict(<item:justaraftmod:jungle_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:acacia_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:dark_oak_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:bamboo_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:mangrove_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:cherry_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:oak_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:spruce_raft>, stageName2);
+ItemStages.restrict(<item:justaraftmod:birch_raft>, stageName2);
 ItemStages.restrict(<item:pottery:small_pot_green>, stageName2);
 ItemStages.restrict(<item:pottery:small_pot_yellow>, stageName2);
 ItemStages.restrict(<item:pottery:tall_pot_brown>, stageName2);
