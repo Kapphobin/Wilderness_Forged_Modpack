@@ -16,3 +16,6 @@
     },
     "temperature": 1500
 });
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

@@ -238,3 +238,6 @@
   "result": "kapphobins_addons:platinum_spear_head",
   "cooling_time": 75
 });
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

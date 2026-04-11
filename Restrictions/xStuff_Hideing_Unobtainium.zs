@@ -391,3 +391,6 @@ ItemStages.restrict(<item:tconstruct:chestplate_plating>.withTag({Material: "tco
 ItemStages.restrict(<item:tconstruct:leggings_plating>.withTag({Material: "tconstruct:slimesteel"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:boots_plating>.withTag({Material: "tconstruct:slimesteel"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:maille>.withTag({Material: "tconstruct:slimesteel"}), stageUnobtainable);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

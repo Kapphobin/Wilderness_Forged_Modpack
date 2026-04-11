@@ -84,3 +84,6 @@ blastFurnace.addRecipe(
     1, 
     100
 );
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

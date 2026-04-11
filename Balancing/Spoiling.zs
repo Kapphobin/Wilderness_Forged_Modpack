@@ -731,3 +731,6 @@ spoilManager.addSpoiling("matcha_ice_cream_spoil", <item:delightful:matcha_ice_c
 spoilManager.addSpoiling("salmonberry_ice_cream_spoil", <item:delightful:salmonberry_ice_cream>, <item:minecraft:rotten_flesh>, 200);
 spoilManager.addSpoiling("melon_popsicle_spoil", <item:farmersdelight:melon_popsicle>, <item:minecraft:rotten_flesh>, 200);
 spoilManager.addSpoiling("cantaloupe_popsicle_spoil", <item:delightful:cantaloupe_popsicle>, <item:minecraft:rotten_flesh>, 200);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

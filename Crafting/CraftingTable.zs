@@ -2387,3 +2387,6 @@ craftingTable.addShaped("steel_chainmail", <item:magistuarmory:steel_chainmail>,
     [<item:magistuarmory:steel_ring>, <item:magistuarmory:steel_chain>, <item:magistuarmory:steel_ring>],
     [<item:magistuarmory:steel_ring>, <item:magistuarmory:steel_ring>, <item:magistuarmory:steel_ring>]
 ]);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

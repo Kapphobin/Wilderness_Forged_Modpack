@@ -9,3 +9,6 @@ smithing.addTransformRecipe(
     <item:musketmod:musket>,
     <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"})
 );
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

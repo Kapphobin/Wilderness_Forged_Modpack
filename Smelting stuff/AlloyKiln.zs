@@ -28,3 +28,6 @@ import mods.immersiveengineering.AlloySmelter;
     200,
     <item:metallictinkering:bronze_ingot> * 4
 );
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

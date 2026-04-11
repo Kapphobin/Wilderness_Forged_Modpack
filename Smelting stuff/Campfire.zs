@@ -96,3 +96,6 @@
     0.1,
     300
 );
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

@@ -5,3 +5,6 @@
     <tag:items:forge:tools/knives>,
     "minecraft:block.grass.break"
 );
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

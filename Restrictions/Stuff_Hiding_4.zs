@@ -144,3 +144,6 @@ ItemStages.restrict(<item:spartanweaponry:aluminum_parrying_dagger>, stageName8)
 ItemStages.restrict(<item:spartanweaponry:platinum_parrying_dagger>, stageName8);
 ItemStages.restrict(<item:spartanweaponry:invar_parrying_dagger>, stageName8);
 ItemStages.restrict(<item:spartanweaponry:constantan_parrying_dagger>, stageName8);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

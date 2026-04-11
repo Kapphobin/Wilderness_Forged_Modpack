@@ -768,3 +768,6 @@ craftingTable.addShaped("raw_clay5_hoe_head", <item:kapphobins_addons:iron_chise
     [air, <item:minecraft:iron_ingot>, air],
     [air, air, stick ]
 ]);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

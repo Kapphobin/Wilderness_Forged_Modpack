@@ -239,3 +239,6 @@ craftingTable.addShaped("stone_hoe_head", <item:kapphobins_addons:stonehoehead>,
   [air, <tag:items:minecraft:stone_tool_materials>, air],
   [air, air, air]
 ]);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

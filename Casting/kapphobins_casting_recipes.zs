@@ -519,3 +519,6 @@ recipes.remove(<item:kapphobins_addons:iron_shovel_head>);
   result: "kapphobins_addons:tin_handle",
   cooling_time: 20
 });
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

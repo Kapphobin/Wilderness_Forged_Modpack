@@ -11,3 +11,6 @@ smoker.remove(<item:minecraft:cooked_rabbit>);
 <recipetype:minecraft:smoking>.addRecipe("smoked_chicken", <item:kapphobins_addons:smoked_chicken>, <item:minecraft:chicken>, 0.35, 100);
 <recipetype:minecraft:smoking>.addRecipe("smoked_rabbit", <item:kapphobins_addons:smoked_rabbit>, <item:minecraft:rabbit>, 0.35, 100);
 <recipetype:minecraft:smoking>.addRecipe("smoked_mutton", <item:kapphobins_addons:smoked_mutton>, <item:minecraft:mutton>, 0.35, 100);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001
