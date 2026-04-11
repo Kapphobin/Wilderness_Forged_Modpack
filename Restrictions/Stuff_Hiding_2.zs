@@ -1353,3 +1353,6 @@ ItemStages.restrict(<item:pottery:tall_pot_purple>, stageName2);
 ItemStages.restrict(<item:minecraft:burn_pottery_sherd>, stageName2);
 ItemStages.restrict(<item:minecraft:blade_pottery_sherd>, stageName2);
 ItemStages.restrict(<item:minecraft:brewer_pottery_sherd>, stageName2);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

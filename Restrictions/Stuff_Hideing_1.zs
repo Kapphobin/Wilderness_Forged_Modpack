@@ -877,3 +877,6 @@ ItemStages.restrict(<item:quark:yellow_corundum_pane>, stageName);
 ItemStages.restrict(<item:quark:yellow_corundum>, stageName);
 ItemStages.restrict(<item:alexsmobs:crocodile_egg>, stageName);
 ItemStages.restrict(<item:minecraft:raw_copper>, stageName);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001
