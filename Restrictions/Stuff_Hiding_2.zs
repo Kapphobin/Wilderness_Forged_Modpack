@@ -39,7 +39,41 @@ ItemStages.restrict(<item:regions_unexplored:magnolia_boat>, stageName4);
 
 ItemStages.restrict(<item:minecraft:birch_boat>, stageName4);
 ItemStages.restrict(<item:regions_unexplored:dead_boat>, stageName4);
+ItemStages.restrict(<item:smallships:bamboo_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:bamboo_galley>, stageName4);
+ItemStages.restrict(<item:smallships:bamboo_cog>, stageName4);
 
+ItemStages.restrict(<item:smallships:mangrove_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:mangrove_galley>, stageName4);
+ItemStages.restrict(<item:smallships:mangrove_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:dark_oak_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:dark_oak_galley>, stageName4);
+ItemStages.restrict(<item:smallships:dark_oak_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:cherry_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:cherry_galley>, stageName4);
+ItemStages.restrict(<item:smallships:cherry_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:acacia_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:acacia_galley>, stageName4);
+ItemStages.restrict(<item:smallships:acacia_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:birch_galley>, stageName4);
+ItemStages.restrict(<item:smallships:birch_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:birch_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:jungle_cog>, stageName4);
+ItemStages.restrict(<item:smallships:jungle_galley>, stageName4);
+ItemStages.restrict(<item:smallships:jungle_drakkar>, stageName4);
+
+ItemStages.restrict(<item:smallships:spruce_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:spruce_galley>, stageName4);
+ItemStages.restrict(<item:smallships:spruce_cog>, stageName4);
+
+ItemStages.restrict(<item:smallships:oak_drakkar>, stageName4);
+ItemStages.restrict(<item:smallships:oak_galley>, stageName4);
+ItemStages.restrict(<item:smallships:oak_cog>, stageName4);
 ItemStages.restrict(<item:quark:blossom_chest_boat>, stageName4);
 ItemStages.restrict(<item:regions_unexplored:cypress_chest_boat>, stageName4);
 ItemStages.restrict(<item:regions_unexplored:cypress_boat>, stageName4);
@@ -597,13 +631,18 @@ ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_dead>, st
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_cobalt>, stageName3);
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_brimwood>, stageName3);
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_blackwood>, stageName3);
-
+ItemStages.restrict(<item:enhancedfarming:baked_egg>, stageName3);
+ItemStages.restrict(<item:minecraft:baked_potato>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_cherry>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_mangrove>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_birch>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_oak>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_ember>, stageName3);
-
+ItemStages.restrict(<item:simpleshops:simple_shop>, stageName3);
+ItemStages.restrict(<item:simpleshops:wooden_stockbar>, stageName3);
+ItemStages.restrict(<item:simpleshops:quartz_stockbar>, stageName3);
+ItemStages.restrict(<item:simpleshops:green_stockbar>, stageName3);
+ItemStages.restrict(<item:simpleshops:red_stockbar>, stageName3);
 ItemStages.restrict(<item:supplementaries:tconstruct/sign_post_skyroot>, stageName3);
 ItemStages.restrict(<item:clayable:sieve>, stageName3);
 ItemStages.restrict(<tag:items:minecraft:wool_carpets>, stageName3);
@@ -670,7 +709,10 @@ ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_jungle>, stageNa
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_sooty_acacia>, stageName3);
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_cypress>, stageName3);
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_blue_bioshroom>, stageName3);
-
+ItemStages.restrict(<item:kapphobins_addons:stone_shovel_head>, stageName3);
+ItemStages.restrict(<item:kapphobins_addons:wooden_shovel_head>, stageName3);
+ItemStages.restrict(<item:kapphobins_addons:wooden_hoe_head>, stageName3);
+ItemStages.restrict(<item:kapphobins_addons:stonehoehead>, stageName3);
 ItemStages.restrict(<item:supplementaries:tconstruct/sign_post_greenheart>, stageName3);
 ItemStages.restrict(<item:supplementaries:vinery/sign_post_dark_cherry>, stageName3);
 ItemStages.restrict(<item:immersivegeology:stairs_trconcrete>, stageName3);
@@ -1087,10 +1129,11 @@ ItemStages.restrict(<item:farmersdelight:purple_canvas_sign>, stageName2);
 ItemStages.restrict(<item:supplementaries:quark/sign_post_ancient>, stageName3);
 ItemStages.restrict(<item:supplementaries:quark/sign_post_blossom>, stageName3);
 ItemStages.restrict(<item:supplementaries:quark/sign_post_azalea>, stageName3);
-
+ItemStages.restrict(<item:kapphobins_addons:stone_spear_head>, stageName2);
 ItemStages.restrict(<item:supplementaries:regions_unexplored/sign_post_joshua>, stageName3);
 ItemStages.restrict(<item:supplementaries:tconstruct/sign_post_enderbark>, stageName3);
-
+ItemStages.restrict(<item:kapphobins_addons:clay_shovel_head>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:clayhoehead>, stageName2);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_smoldering>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_smoldering_bamboo>, stageName3);
 ItemStages.restrict(<item:supplementaries:burnt/sign_post_burnt>, stageName3);
@@ -1100,7 +1143,16 @@ ItemStages.restrict(<item:minecraft:dark_oak_sign>, stageName2);
 ItemStages.restrict(<item:minecraft:crimson_sign>, stageName2);
 ItemStages.restrict(<item:minecraft:warped_sign>, stageName2);
 ItemStages.restrict(<item:minecraft:bamboo_sign>, stageName2);
-
+ItemStages.restrict(<item:kapphobins_addons:raw_clayhoehead>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:raw_clay_shovel_head>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:clay_small_blade>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:rawclayaxehead>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:brick_pick_head>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:clayaxehead>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:brick_small_blade>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:clay_handle>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:brick_handle>, stageName2);
+ItemStages.restrict(<item:kapphobins_addons:clay_pick_head>, stageName2);
 ItemStages.restrict(<item:quark:ancient_sign>, stageName2);
 ItemStages.restrict(<item:quark:blossom_sign>, stageName2);
 ItemStages.restrict(<item:quark:azalea_sign>, stageName2);

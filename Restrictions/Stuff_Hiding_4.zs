@@ -155,11 +155,19 @@ ItemStages.restrict(<item:sophisticatedbackpacks:diamond_backpack>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:watermill>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:windmill_sail>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:windmill_blade>, stageName8);
-
+ItemStages.restrict(<item:boatload:wide_bamboo_raft>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:connector_lv>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:connector_lv_relay>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:wirecoil_copper>, stageName8);
-
+ItemStages.restrict(<item:smallships:cherry_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:bamboo_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:birch_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:dark_oak_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:acacia_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:oak_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:mangrove_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:jungle_brigg>, stageName8);
+ItemStages.restrict(<item:smallships:spruce_brigg>, stageName8);
 ItemStages.restrict(<item:antiqueatlas:empty_antique_atlas>, stageName8);
 ItemStages.restrict(<item:supplementaries:globe>, stageName8);
 ItemStages.restrict(<item:supplementaries:globe_sepia>, stageName8);
