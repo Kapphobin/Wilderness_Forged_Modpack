@@ -1736,59 +1736,10 @@ craftingTable.addShaped("backpack", <item:sophisticatedbackpacks:gold_backpack>,
     [<tag:items:forge:ingots/gold>, <item:sophisticatedbackpacks:iron_backpack>, <tag:items:forge:ingots/gold>],
     [<tag:items:forge:ingots/steel>, <tag:items:forge:ingots/gold>, <tag:items:forge:ingots/steel>]
 ]);
-
-craftingTable.addShaped("craft212", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:forge:tools/knives>, <item:minecraft:air>],
-    [<item:htm:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft12", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:forge:tools/knives>, <item:minecraft:air>],
-    [<item:immersiveengineering:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("cra2ft33", <item:minecraft:crafting_table>, [
-    [<item:htm:hatchet>.anyDamage(), <item:htm:flint_knife>.anyDamage(), <item:minecraft:air>],
-    [<item:htm:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("cra2ft3", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:spartanweaponry:throwing_knives>, <item:minecraft:air>],
-    [<item:htm:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft3", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:spartanweaponry:throwing_knives>, <item:minecraft:air>],
-    [<item:immersiveengineering:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft4", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:minecraft:swords>, <item:minecraft:air>],
-    [<item:immersiveengineering:hammer>.anyDamage(), <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft15", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:forge:tools/knives>, <item:minecraft:air>],
-    [<tag:items:spartanweaponry:battle_hammers>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft6", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:spartanweaponry:throwing_knives>, <item:minecraft:air>],
-    [<tag:items:spartanweaponry:battle_hammers>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
-]);
-
-craftingTable.addShaped("craft7", <item:minecraft:crafting_table>, [
-    [<tag:items:forge:tools/axes>, <tag:items:minecraft:swords>, <item:minecraft:air>],
-    [<tag:items:spartanweaponry:battle_hammers>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+craftingTable.addShaped("lea3d2", <item:minecraft:crafting_table>, [
+    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, air],
+    [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("lead2", <item:minecraft:lead>, [

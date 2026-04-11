@@ -2321,3 +2321,6 @@ craftingTable.addShaped("blackstone_slab_saw", <item:minecraft:blackstone_slab>*
    [air, saw, air],
    [<item:minecraft:blackstone>, <item:minecraft:blackstone>, <item:minecraft:blackstone>]
 ]);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001

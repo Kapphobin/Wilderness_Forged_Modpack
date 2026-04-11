@@ -386,3 +386,6 @@ craftingTable.addShaped("galactite_button_chisel", <item:marbellous:galactite_bu
    [air, chisel, air],
    [air, <item:marbellous:galactite>, air]
 ]);
+// Author: Kapphobin
+// Project: Wilderness Forged
+// ID: KP-2026-CORE-001
