@@ -1,0 +1,86 @@
+blastFurnace.remove(<item:tconstruct:queens_slime_ingot>);
+blastFurnace.remove(<item:tconstruct:manyullyn_ingot>);
+blastFurnace.remove(<item:tconstruct:hepatizon_ingot>);
+blastFurnace.remove(<item:minecraft:iron_ingot>);
+blastFurnace.remove(<item:magistuarmory:steel_ingot>);
+blastFurnace.remove(<item:bronze_armor:bronze_ingot>);
+blastFurnace.remove(<item:bronze_armor:tin_ingot>);
+blastFurnace.remove(<item:metallictinkering:invar_ingot>);
+blastFurnace.remove(<item:metallictinkering:bronze_ingot>);
+blastFurnace.remove(<item:metallictinkering:silver_ingot>);
+blastFurnace.remove(<item:metallictinkering:pewter_ingot>);
+blastFurnace.remove(<item:metallictinkering:zinc_ingot>);
+blastFurnace.remove(<item:metallictinkering:brass_ingot>);
+blastFurnace.remove(<item:metallictinkering:tungsten_ingot>);
+blastFurnace.remove(<item:metallictinkering:constantan_ingot>);
+blastFurnace.remove(<item:metallictinkering:platinum_ingot>);
+blastFurnace.remove(<item:metallictinkering:uranium_ingot>);
+blastFurnace.remove(<item:metallictinkering:tin_ingot>);
+blastFurnace.remove(<item:metallictinkering:nickel_ingot>);
+blastFurnace.remove(<item:metallictinkering:osmium_ingot>);
+blastFurnace.remove(<item:metallictinkering:aluminum_ingot>);
+blastFurnace.remove(<item:metallictinkering:lead_ingot>);
+blastFurnace.remove(<item:metallictinkering:electrum_ingot>);
+blastFurnace.remove(<item:tconstruct:cobalt_ingot>);
+blastFurnace.remove(<item:tconstruct:steel_ingot>);
+blastFurnace.remove(<item:tconstruct:slimesteel_ingot>);
+blastFurnace.remove(<item:tconstruct:amethyst_bronze_ingot>);
+blastFurnace.remove(<item:tconstruct:rose_gold_ingot>);
+blastFurnace.remove(<item:tconstruct:pig_iron_ingot>);
+blastFurnace.remove(<item:tconstruct:cinderslime_ingot>);
+blastFurnace.remove(<item:minecraft:gold_ingot>);
+blastFurnace.remove(<item:minecraft:copper_ingot>);
+blastFurnace.remove(<item:minecraft:emerald>);
+blastFurnace.remove(<item:minecraft:redstone>);
+blastFurnace.remove(<item:minecraft:coal>);
+blastFurnace.remove(<item:minecraft:diamond>);
+blastFurnace.remove(<item:minecraft:lapis_lazuli>);
+blastFurnace.remove(<item:immersiveengineering:ingot_hop_graphite>);
+blastFurnace.remove(<item:immersiveengineering:ingot_aluminum>);
+blastFurnace.remove(<item:immersiveengineering:ingot_lead>);
+blastFurnace.remove(<item:immersiveengineering:ingot_silver>);
+blastFurnace.remove(<item:immersiveengineering:ingot_nickel>);
+blastFurnace.remove(<item:immersiveengineering:ingot_uranium>);
+blastFurnace.remove(<item:immersiveengineering:ingot_constantan>);
+blastFurnace.remove(<item:immersiveengineering:ingot_electrum>);
+blastFurnace.remove(<item:immersiveengineering:ingot_steel>); 
+
+blastFurnace.addRecipe(
+    "pickyhead52", 
+    <item:tconstruct:pig_iron_ingot>, 
+    <item:immersiveengineering:dust_iron>,
+    1, 
+    100
+);
+
+blastFurnace.addRecipe(
+    "pickyhead2", 
+    <item:kapphobins_addons:brick_pick_head>, 
+    <item:kapphobins_addons:clay_pick_head>,
+    1, 
+    100
+);
+
+blastFurnace.addRecipe(
+    "4235head", 
+    <item:kapphobins_addons:brick_small_blade>, 
+    <item:kapphobins_addons:clay_small_blade>,
+    1, 
+    100
+);
+
+blastFurnace.addRecipe(
+    "p320yhead", 
+    <item:kapphobins_addons:brick_handle>, 
+    <item:kapphobins_addons:clay_handle>,
+    1, 
+    100
+);
+
+blastFurnace.addRecipe(
+    "5524213head", 
+    <item:kapphobins_addons:clayaxehead>, 
+    <item:kapphobins_addons:rawclayaxehead>,
+    1, 
+    100
+);

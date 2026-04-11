@@ -1,0 +1,111 @@
+furnace.remove(<item:minecraft:brick>); 
+furnace.remove(<item:clayable:clay_bucket>);
+furnace.remove(<item:tconstruct:queens_slime_ingot>);
+furnace.remove(<item:tconstruct:manyullyn_ingot>);
+furnace.remove(<item:tconstruct:hepatizon_ingot>);
+furnace.remove(<item:minecraft:iron_ingot>);
+furnace.remove(<item:magistuarmory:steel_ingot>);
+furnace.remove(<item:bronze_armor:bronze_ingot>);
+furnace.remove(<item:bronze_armor:tin_ingot>);
+furnace.remove(<item:metallictinkering:invar_ingot>);
+furnace.remove(<item:metallictinkering:bronze_ingot>);
+furnace.remove(<item:metallictinkering:silver_ingot>);
+furnace.remove(<item:metallictinkering:pewter_ingot>);
+furnace.remove(<item:metallictinkering:zinc_ingot>);
+furnace.remove(<item:metallictinkering:brass_ingot>);
+furnace.remove(<item:metallictinkering:tungsten_ingot>);
+furnace.remove(<item:metallictinkering:constantan_ingot>);
+furnace.remove(<item:metallictinkering:platinum_ingot>);
+furnace.remove(<item:metallictinkering:uranium_ingot>);
+furnace.remove(<item:metallictinkering:tin_ingot>);
+furnace.remove(<item:metallictinkering:nickel_ingot>);
+furnace.remove(<item:metallictinkering:osmium_ingot>);
+furnace.remove(<item:metallictinkering:aluminum_ingot>);
+furnace.remove(<item:metallictinkering:lead_ingot>);
+furnace.remove(<item:metallictinkering:electrum_ingot>);
+furnace.remove(<item:tconstruct:cobalt_ingot>);
+furnace.remove(<item:tconstruct:steel_ingot>);
+furnace.remove(<item:tconstruct:slimesteel_ingot>);
+furnace.remove(<item:tconstruct:amethyst_bronze_ingot>);
+furnace.remove(<item:tconstruct:rose_gold_ingot>);
+furnace.remove(<item:tconstruct:pig_iron_ingot>);
+furnace.remove(<item:tconstruct:cinderslime_ingot>);
+furnace.remove(<item:minecraft:gold_ingot>);
+furnace.remove(<item:minecraft:copper_ingot>);
+furnace.remove(<item:minecraft:emerald>);
+furnace.remove(<item:minecraft:redstone>);
+furnace.remove(<item:minecraft:coal>);
+furnace.remove(<item:minecraft:diamond>);
+furnace.remove(<item:minecraft:lapis_lazuli>);
+furnace.remove(<item:immersiveengineering:ingot_hop_graphite>);
+furnace.remove(<item:immersiveengineering:ingot_aluminum>);
+furnace.remove(<item:immersiveengineering:ingot_lead>);
+furnace.remove(<item:immersiveengineering:ingot_silver>);
+furnace.remove(<item:immersiveengineering:ingot_nickel>);
+furnace.remove(<item:immersiveengineering:ingot_uranium>);
+furnace.remove(<item:immersiveengineering:ingot_constantan>);
+furnace.remove(<item:immersiveengineering:ingot_electrum>);
+furnace.remove(<item:immersiveengineering:ingot_steel>);
+furnace.addRecipe("clay_shovel_head", <item:kapphobins_addons:clay_shovel_head>, <item:kapphobins_addons:raw_clay_shovel_head>, 0.3, 200);
+furnace.addRecipe(
+  "clay_hoe_head_smelting",
+  <item:kapphobins_addons:clayhoehead>,
+  <item:kapphobins_addons:raw_clayhoehead>,
+  0.1,
+  200
+);
+furnace.addRecipe(
+    "42355head", 
+    <item:kapphobins_addons:brick_small_blade>, 
+    <item:kapphobins_addons:clay_small_blade>,
+    1, 
+    100
+);
+
+furnace.addRecipe(
+    "p3204yhead", 
+    <item:kapphobins_addons:brick_handle>, 
+    <item:kapphobins_addons:clay_handle>,
+    1, 
+    100
+);
+
+furnace.addRecipe(
+    "55242133head", 
+    <item:kapphobins_addons:clayaxehead>, 
+    <item:kapphobins_addons:rawclayaxehead>,
+    1, 
+    100
+);
+
+furnace.addRecipe(
+    "pickyhead", 
+    <item:kapphobins_addons:brick_pick_head>, 
+    <item:kapphobins_addons:clay_pick_head>,
+    1, 
+    200
+);
+
+furnace.addRecipe(
+    "sulfur_dust", 
+    <item:immersiveengineering:dust_sulfur>, 
+    <item:minecraft:redstone>,
+    1, 
+    200
+);
+
+furnace.addRecipe(
+    "furnace_salt_dust", 
+    <item:vintagedelight:salt_dust>, 
+    <item:clayable:clay_bucket_with_water>,
+    1, 
+    200
+);
+
+furnace.addRecipe(
+    "furnace_salt_dust2", 
+    <item:vintagedelight:salt_dust>, 
+    <item:minecraft:water_bucket>,
+    1, 
+    200
+);
