@@ -13,6 +13,7 @@ craftingTable.remove(<item:chipped:tinkering_table>);
 craftingTable.remove(<item:supplementaries:bomb>);
 craftingTable.remove(<item:immersivegeology:hammer_bronze>); 
 craftingTable.remove(<item:simpleshops:simple_shop>); 
+craftingTable.remove(<item:tconstruct:seared_bricks>); 
 //COPY PASTE READY
 
 craftingTable.remove(<item:minecraft:air>);
@@ -26,6 +27,11 @@ craftingTable.addShaped("recipename2", <item:minecraft:air>, [
 ]);
 
 //ADDING NEW RECIPES 
+
+craftingTable.addShaped("recipena12312412me2", <item:tconstruct:seared_bricks>*4, [
+   [<item:tconstruct:seared_brick>, <item:tconstruct:seared_brick>],
+   [<item:tconstruct:seared_brick>, <item:tconstruct:seared_brick>]
+]);
 
 craftingTable.addShaped("saw4252", <item:kapphobins_addons:diamond_infused_steel_saw>, [
    [<tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>, <tag:items:minecraft:logs>],

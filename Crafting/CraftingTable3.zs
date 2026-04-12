@@ -24,6 +24,16 @@ recipes.remove(<item:kapphobins_addons:wooden_pickaxe_123>);
 recipes.remove(<item:kapphobins_addons:wooden_sword_123>);
 recipes.remove(<item:kapphobins_addons:wooden_axe_123>);
 recipes.remove(<item:clayable:raw_clay_hoe>);
+craftingTable.remove(<item:minecraft:stone_shovel>);
+craftingTable.remove(<item:minecraft:stone_sword>);
+craftingTable.remove(<item:minecraft:wooden_sword>);
+craftingTable.remove(<item:minecraft:stone_axe>);
+craftingTable.remove(<item:minecraft:wooden_axe>);
+craftingTable.remove(<item:minecraft:wooden_hoe>);
+craftingTable.remove(<item:minecraft:stone_hoe>);
+craftingTable.remove(<item:minecraft:stone_pickaxe>);
+craftingTable.remove(<item:minecraft:wooden_pickaxe>);
+craftingTable.remove(<item:minecraft:wooden_shovel>);
 //COPY PASTE READY
 
 craftingTable.remove(<item:minecraft:air>);
