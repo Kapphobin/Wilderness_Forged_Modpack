@@ -1,7 +1,7 @@
 import mods.itemstages.ItemStages;
 
 val stageName = "stage1";  //Lower paleoltichic
-
+//test
 // Hide items completely from JEI Stage1
 ItemStages.restrict(<item:minecraft:string>, stageName);
 ItemStages.restrict(<item:kapphobins_addons:primalstoneknife>, stageName);
