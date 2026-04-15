@@ -266,11 +266,11 @@ craftingTable.remove(<item:chipped:glassblower>);
 
 //COPY PASTE READY
 
-craftingTable.remove(<item:minecraft:air>);
+craftingTable.remove(air);
 
 //COPY PASTE READY
 
-craftingTable.addShaped("recipename", <item:minecraft:air>, [
+craftingTable.addShaped("recipename", air, [
    [air, air, air],
    [air, air, air],
    [air, air, air]
@@ -646,7 +646,7 @@ craftingTable.addShaped("fence_dark_cherry", <item:vinery:dark_cherry_fence>, [
 ]);
 
 craftingTable.addShaped("fence1", <item:regions_unexplored:blackwood_fence>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [air, air, air],
     [<item:regions_unexplored:blackwood_branch>,  <tag:items:forge:rods/wooden>, <item:regions_unexplored:blackwood_branch> ],
     [<item:regions_unexplored:blackwood_branch>,  <tag:items:forge:rods/wooden>,  <item:regions_unexplored:blackwood_branch> ]
 ]);
@@ -873,7 +873,7 @@ craftingTable.addShaped("fence_gate_azalea", <item:quark:azalea_fence_gate>, [
 craftingTable.addShaped("fence_gate_dark_cherry", <item:vinery:dark_cherry_fence_gate>, [
     [stick, <item:vinery:stripped_dark_cherry_log>, stick],
     [stick, <item:vinery:stripped_dark_cherry_log>, stick],
-    [air,   air,                                    air  ]
+    [air, air, air]
 ]);
 
 // PICK HEAD - pointy triangle shape
@@ -1089,45 +1089,43 @@ craftingTable.addShaped("rock_hammer_head", <item:tconstruct:hammer_head>.withTa
 
 // Add string from plant string
 craftingTable.addShaped("plant_string_recipe", <item:minecraft:string>, [
-    [<item:htm:plant_string>, <item:htm:plant_string>, <item:minecraft:air>],
-    [<item:htm:plant_string>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [<item:htm:plant_string>, <item:htm:plant_string>],
+    [<item:htm:plant_string>, air]
 ]);
 
 craftingTable.addShaped("cloth", <item:marbledsfirstaid:cloth>*2,[
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<tag:items:minecraft:wool>, <tag:items:minecraft:wool>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<tag:items:minecraft:wool>, <tag:items:minecraft:wool>]
 ]);
 
 craftingTable.addShaped("roman_armorgladius233", <item:roman_armor:pilum>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"})],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<tag:items:spartanweaponry:handles>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"})],
+    [air, <tag:items:spartanweaponry:poles>, air],
+    [<tag:items:spartanweaponry:handles>, air, air]
 ]);
 
 craftingTable.addShaped("roman_armorgladius23", <item:roman_armor:pompeii_gladius>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/steel>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>]
+    [air, <tag:items:forge:ingots/steel>, air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"}), air],
+    [air, <tag:items:forge:rods/wooden>, air]
 ]);
 
 craftingTable.addShaped("roman_armorgladius2", <item:roman_armor:mainz_gladius>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/iron>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>]
+    [air, <tag:items:forge:ingots/iron>, air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <tag:items:forge:rods/wooden>, air]
 ]);
 
 craftingTable.addShaped("roman_armorgladius", <item:roman_armor:gladius>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/iron>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>]
+    [air, <tag:items:forge:ingots/iron>, air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"}), air],
+    [air, <tag:items:forge:rods/wooden>, air]
 ]);
 
 craftingTable.addShaped("scorched_ingot_tank", <item:tconstruct:scorched_ingot_tank>, [
-    [<item:tconstruct:scorched_brick>, <item:minecraft:air>, <item:tconstruct:scorched_brick>],
-    [<item:tconstruct:scorched_brick>, <item:minecraft:air>, <item:tconstruct:scorched_brick>],
-    [<item:tconstruct:scorched_brick>, <item:minecraft:air>, <item:tconstruct:scorched_brick>]
+    [<item:tconstruct:scorched_brick>, air, <item:tconstruct:scorched_brick>],
+    [<item:tconstruct:scorched_brick>, air, <item:tconstruct:scorched_brick>],
+    [<item:tconstruct:scorched_brick>, air, <item:tconstruct:scorched_brick>]
 ]);
 
 craftingTable.addShaped("scorched_ingot_gauge", <item:tconstruct:scorched_ingot_gauge>, [
@@ -1144,591 +1142,537 @@ craftingTable.addShaped("scorched_fuel_gauge", <item:tconstruct:scorched_fuel_ga
 
 craftingTable.addShaped("scorched_fuel_tank", <item:tconstruct:scorched_fuel_tank>, [
     [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>],
-    [<item:tconstruct:scorched_brick>, <item:minecraft:air>, <item:tconstruct:scorched_brick>],
+    [<item:tconstruct:scorched_brick>, air, <item:tconstruct:scorched_brick>],
     [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>]
 ]);
 
 // Wooden Parrying Dagger
 craftingTable.addShaped("wooden_parrying_dagger", <item:spartanweaponry:wooden_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"})]
 ]);
 
 // Stone Parrying Dagger
 craftingTable.addShaped("stone_parrying_dagger", <item:spartanweaponry:stone_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:rock"})]
 ]);
 
 // Copper Parrying Dagger
 craftingTable.addShaped("copper_parrying_dagger", <item:spartanweaponry:copper_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:copper"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:copper"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:copper"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:copper"})]
 ]);
 
 // Iron Parrying Dagger
 craftingTable.addShaped("iron_parrying_dagger", <item:spartanweaponry:iron_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"})]
 ]);
 
 // Gold Parrying Dagger
 craftingTable.addShaped("golden_parrying_dagger", <item:spartanweaponry:golden_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:golden_small_blade>],
+    [air, <item:kapphobins_addons:golden_handle>]
 ]);
 
 // Diamond Parrying Dagger
 craftingTable.addShaped("diamond_parrying_dagger", <item:spartanweaponry:diamond_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:diamond_small_blade>],
+    [air, <item:kapphobins_addons:diamond_handle>]
 ]);
 
 // Netherite Parrying Dagger
 craftingTable.addShaped("netherite_parrying_dagger", <item:spartanweaponry:netherite_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:netherite_small_blade>],
+    [air, <item:kapphobins_addons:netherite_handle>]
 ]);
 
 // Tin Parrying Dagger
 craftingTable.addShaped("tin_parrying_dagger", <item:spartanweaponry:tin_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:tin_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:tin_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:tin_small_blade>],
+    [air, <item:kapphobins_addons:tin_handle>]
 ]);
 
 // Bronze Parrying Dagger
 craftingTable.addShaped("bronze_parrying_dagger", <item:spartanweaponry:bronze_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:bronze"})]
 ]);
 
 // Steel Parrying Dagger
 craftingTable.addShaped("steel_parrying_dagger", <item:spartanweaponry:steel_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"})]
 ]);
 
 // Silver Parrying Dagger
 craftingTable.addShaped("silver_parrying_dagger", <item:spartanweaponry:silver_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:silver"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:silver"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:silver"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:silver"})]
 ]);
 
 // Electrum Parrying Dagger
 craftingTable.addShaped("electrum_parrying_dagger", <item:spartanweaponry:electrum_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:electrum"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:electrum"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:electrum"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:electrum"})]
 ]);
 
 // Lead Parrying Dagger
 craftingTable.addShaped("lead_parrying_dagger", <item:spartanweaponry:lead_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:lead"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:lead"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:lead"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:lead"})]
 ]);
 
 // Nickel Parrying Dagger
 craftingTable.addShaped("nickel_parrying_dagger", <item:spartanweaponry:nickel_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:nickel_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:nickel_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:nickel_small_blade>],
+    [air, <item:kapphobins_addons:nickel_handle>]
 ]);
 
 // Invar Parrying Dagger
 craftingTable.addShaped("invar_parrying_dagger", <item:spartanweaponry:invar_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:invar"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:invar"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:invar"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:invar"})]
 ]);
 
 // Constantan Parrying Dagger
 craftingTable.addShaped("constantan_parrying_dagger", <item:spartanweaponry:constantan_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:constantan"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:constantan"}), <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:constantan"})],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:constantan"})]
 ]);
 
 // Platinum Parrying Dagger
 craftingTable.addShaped("platinum_parrying_dagger", <item:spartanweaponry:platinum_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:platinum_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:platinum_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:platinum_small_blade>],
+    [air, <item:kapphobins_addons:platinum_handle>]
 ]);
 
 // Aluminum Parrying Dagger
 craftingTable.addShaped("aluminum_parrying_dagger", <item:spartanweaponry:aluminum_parrying_dagger>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:aluminium_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:aluminium_handle>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:aluminium_small_blade>,]
+    [air, <item:kapphobins_addons:aluminium_handle>]
 ]);
 
 // Wooden Pickaxe
 craftingTable.addShaped("wooden_pickaxe", <item:minecraft:wooden_pickaxe>, [
-    [<item:minecraft:air>, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:wood"}), air],
+    [air, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Steel Pickaxe
 craftingTable.addShaped("steel_pickaxe", <item:immersiveengineering:pickaxe_steel>, [
-    [<item:minecraft:air>, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:steel_binding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:steel"}), air],
+    [air, <item:kapphobins_addons:steel_binding>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Iron Pickaxe
 craftingTable.addShaped("iron_pickaxe", <item:minecraft:iron_pickaxe>, [
-    [<item:minecraft:air>, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Gold Pickaxe
 craftingTable.addShaped("golden_pickaxe", <item:minecraft:golden_pickaxe>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_pick_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:goldbinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:golden_pick_head>, air],
+    [air, <item:kapphobins_addons:goldbinding>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Diamond Pickaxe
 craftingTable.addShaped("diamond_pickaxe", <item:minecraft:diamond_pickaxe>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_pick_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:diamondbinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:diamond_pick_head>, air],
+    [air, <item:kapphobins_addons:diamondbinding>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Netherite Pickaxe
 craftingTable.addShaped("netherite_pickaxe", <item:minecraft:netherite_pickaxe>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_pick_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:netheritebinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:netherite_pick_head>, air],
+    [air, <item:kapphobins_addons:netheritebinding>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // Bronze Pickaxe
 craftingTable.addShaped("bronze_pickaxe", <item:bronze_armor:bronze_pickaxe>, [
-    [<item:minecraft:air>, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:tconstruct:pick_head>.withTag({Material: "tconstruct:bronze"}), air],
+    [air, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:bronze"}), air],
+    [air, <item:minecraft:stick>, air]
 ]);
 craftingTable.addShaped("raw_clay_pickaxe2", <item:clayable:raw_clay_pickaxe>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_pick_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:clay_pick_head>, air],
+    [air, <item:minecraft:stick>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("raw_red_clay_pickaxe2", <item:clayable:raw_red_clay_pickaxe>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_pick_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:clay_pick_head>, air],
+    [air, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 // DIAMOND
 craftingTable.addShaped("diamond_dagger", <item:spartanweaponry:diamond_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:diamond_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // GOLD
 craftingTable.addShaped("gold_dagger", <item:spartanweaponry:golden_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:golden_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // NETHERITE
 craftingTable.addShaped("netherite_dagger", <item:spartanweaponry:netherite_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:netherite_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // IRON
 craftingTable.addShaped("iron_dagger", <item:spartanweaponry:iron_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // COPPER
 craftingTable.addShaped("copper_dagger", <item:spartanweaponry:copper_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:copper"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:copper"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // STONE
 craftingTable.addShaped("stone_dagger", <item:spartanweaponry:stone_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // WOOD
 craftingTable.addShaped("wood_dagger", <item:spartanweaponry:wooden_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"})],
+    [air, <item:spartanweaponry:handle>],
 ]);
 
 // TIN
 craftingTable.addShaped("tin_dagger", <item:spartanweaponry:tin_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:tin_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:tin_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // ALUMINUM
 craftingTable.addShaped("aluminum_dagger", <item:spartanweaponry:aluminum_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:aluminium_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:aluminium_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // NICKEL
 craftingTable.addShaped("nickel_dagger", <item:spartanweaponry:nickel_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:nickel_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:nickel_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // PLATINUM
 craftingTable.addShaped("platinum_dagger", <item:spartanweaponry:platinum_dagger>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:platinum_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:platinum_small_blade>],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // BRONZE
 craftingTable.addShaped("bronze_dagger", <item:spartanweaponry:bronze_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // STEEL
 craftingTable.addShaped("steel_dagger", <item:spartanweaponry:steel_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // INVAR
 craftingTable.addShaped("invar_dagger", <item:spartanweaponry:invar_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:invar"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:invar"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // CONSTANTAN
 craftingTable.addShaped("constantan_dagger", <item:spartanweaponry:constantan_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:constantan"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:constantan"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // ELECTRUM
 craftingTable.addShaped("electrum_dagger", <item:spartanweaponry:electrum_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:electrum"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:electrum"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // LEAD
 craftingTable.addShaped("lead_dagger", <item:spartanweaponry:lead_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:lead"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:lead"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 // SILVER
 craftingTable.addShaped("silver_dagger", <item:spartanweaponry:silver_dagger>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:silver"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:spartanweaponry:handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:silver"})],
+    [air, <item:spartanweaponry:handle>]
 ]);
 
 craftingTable.addShaped("wooden_sword", <item:minecraft:wooden_sword>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:wood"}), air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:wood"}), air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Stone Sword
 craftingTable.addShaped("stone_sword3", <item:minecraft:stone_sword>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:rock"}), air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:rock"}), air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Iron Sword
 craftingTable.addShaped("iron_sword2", <item:minecraft:iron_sword>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Golden Sword
 craftingTable.addShaped("golden_sword", <item:minecraft:golden_sword>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:golden_small_blade>, air],
+    [air, <item:kapphobins_addons:golden_handle>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Diamond Sword
 craftingTable.addShaped("diamond_sword", <item:minecraft:diamond_sword>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:diamond_small_blade>, air],
+    [air, <item:kapphobins_addons:diamond_handle>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Netherite Sword
 craftingTable.addShaped("netherite_sword", <item:minecraft:netherite_sword>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:netherite_small_blade>, air],
+    [air, <item:kapphobins_addons:netherite_handle>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Bronze Sword
 craftingTable.addShaped("bronze_sword4", <item:bronze_armor:bronze_sword>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:bronze"}), air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:bronze"}), air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Steel Sword
 craftingTable.addShaped("steel_sword", <item:immersiveengineering:sword_steel>, [
-    [<item:minecraft:air>, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:steel"}), air],
+    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:steel"}), air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Raw Clay Sword
 craftingTable.addShaped("raw_clay_sword2", <item:clayable:raw_clay_sword>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:clay_small_blade>, air],
+    [air, <item:kapphobins_addons:clay_handle>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Raw Red Clay Sword
 craftingTable.addShaped("raw_red_clay_sword3", <item:clayable:raw_red_clay_sword>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_small_blade>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:clay_handle>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:clay_small_blade>, air],
+    [air, <item:kapphobins_addons:clay_handle>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Diamond Axe recipe
 craftingTable.addShaped("diamond_axe", <item:minecraft:diamond_axe>, [
-    [<item:kapphobins_addons:diamondaxehead>, <item:kapphobins_addons:diamondbinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:kapphobins_addons:diamondaxehead>, <item:kapphobins_addons:diamondbinding>, air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Wooden Axe
 craftingTable.addShaped("wooden_axe", <item:minecraft:wooden_axe>, [
-    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:wood"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:wood"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:wood"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:wood"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Stone Axe
 craftingTable.addShaped("stone_axe", <item:minecraft:stone_axe>, [
-    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:rock"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:rock"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:rock"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:rock"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Iron Axe
 craftingTable.addShaped("iron_axe", <item:minecraft:iron_axe>, [
-    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:iron"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:iron"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:iron"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:iron"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Bronze Axe
 craftingTable.addShaped("bronze_axe", <item:bronze_armor:bronze_axe>, [
-    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:bronze"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:bronze"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:bronze"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:bronze"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Steel Axe
 craftingTable.addShaped("steel_axe", <item:immersiveengineering:axe_steel>, [
-    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:steel"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:steel"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:steel"}), <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:steel"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Golden Axe
 craftingTable.addShaped("golden_axe", <item:minecraft:golden_axe>, [
-    [<item:kapphobins_addons:gold_axe_head>, <item:kapphobins_addons:goldbinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:kapphobins_addons:gold_axe_head>, <item:kapphobins_addons:goldbinding>, air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Netherite Axe
 craftingTable.addShaped("netherite_axe", <item:minecraft:netherite_axe>, [
-    [<item:kapphobins_addons:netherite_axe_head>, <item:kapphobins_addons:netheritebinding>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:kapphobins_addons:netherite_axe_head>, <item:kapphobins_addons:netheritebinding>, air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 // Raw Clay Axe
 craftingTable.addShaped("raw_clay_axe343", <item:clayable:raw_clay_axe>, [
-    [<item:kapphobins_addons:rawclayaxehead>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:kapphobins_addons:rawclayaxehead>, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 // Raw Clay Axe
 craftingTable.addShaped("raw_clay_axe34233", <item:clayable:raw_red_clay_axe>, [
-    [<item:kapphobins_addons:rawclayaxehead>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:balm:wooden_rods>, <item:minecraft:air>]
+    [<item:kapphobins_addons:rawclayaxehead>, <item:tconstruct:tool_binding>.withTag({Material: "tconstruct:leather"}), air],
+    [air, <tag:items:balm:wooden_rods>, air],
+    [air, <tag:items:balm:wooden_rods>, air]
 ]);
 
 craftingTable.addShaped("sack", <item:kapphobins_addons:backpack>.withTag({Inventory: {Size: 6, Items: []}}), [
-    [<item:minecraft:air>, <item:htm:plant_string>, <item:minecraft:air>],
-    [<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:leather>],
-    [<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]
+    [air, <item:htm:plant_string>, air],
+    [<item:minecraft:leather>, air, <item:minecraft:leather>],
+    [air, <item:minecraft:leather>, air]
 ]);
 
 
 // WOODEN SPEAR
 craftingTable.addShaped("wooden_spear", <item:spartanweaponry:wooden_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:wooden_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:wooden_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // STONE SPEAR
 craftingTable.addShaped("stone_spear", <item:spartanweaponry:stone_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:stone_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:stone_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // COPPER SPEAR
 craftingTable.addShaped("copper_spear", <item:spartanweaponry:copper_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:copperspearhead>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:copperspearhead>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // IRON SPEAR
 craftingTable.addShaped("iron_spear", <item:spartanweaponry:iron_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:iron_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:iron_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // GOLD SPEAR (FIX: might be "gold" not "golden")
 craftingTable.addShaped("gold_spear", <item:spartanweaponry:golden_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:golden_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:golden_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // DIAMOND SPEAR
 craftingTable.addShaped("diamond_spear", <item:spartanweaponry:diamond_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:diamond_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:diamond_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // NETHERITE SPEAR
 craftingTable.addShaped("netherite_spear", <item:spartanweaponry:netherite_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:netherite_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:netherite_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // BRONZE SPEAR
 craftingTable.addShaped("bronze_spear", <item:spartanweaponry:bronze_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:bronze_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:bronze_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // STEEL SPEAR
 craftingTable.addShaped("steel_spear", <item:spartanweaponry:steel_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:steelspearhead>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:steelspearhead>],
+    [air, <tag:items:spartanweaponry:poles>],
 ]);
 
 // TIN SPEAR
 craftingTable.addShaped("tin_spear", <item:spartanweaponry:tin_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:tin_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:tin_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>],
 ]);
 
 // ALUMINUM SPEAR
 craftingTable.addShaped("aluminum_spear", <item:spartanweaponry:aluminum_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:aluminium_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:aluminium_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // LEAD SPEAR
 craftingTable.addShaped("lead_spear", <item:spartanweaponry:lead_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:lead_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:lead_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // SILVER SPEAR
 craftingTable.addShaped("silver_spear", <item:spartanweaponry:silver_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:silver_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:silver_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // NICKEL SPEAR
 craftingTable.addShaped("nickel_spear", <item:spartanweaponry:nickel_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:nickle_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:nickle_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // ELECTRUM SPEAR
 craftingTable.addShaped("electrum_spear", <item:spartanweaponry:electrum_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:electrum_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:electrum_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // INVAR SPEAR
 craftingTable.addShaped("invar_spear", <item:spartanweaponry:invar_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:invar_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:invar_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // CONSTANTAN SPEAR
 craftingTable.addShaped("constantan_spear", <item:spartanweaponry:constantan_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:constant_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:constant_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 // PLATINUM SPEAR
 craftingTable.addShaped("platinum_spear", <item:spartanweaponry:platinum_spear>, [
-    [<item:minecraft:air>, <item:kapphobins_addons:platinum_spear_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:poles>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:platinum_spear_head>],
+    [air, <tag:items:spartanweaponry:poles>]
 ]);
 
 craftingTable.addShaped("backpack", <item:sophisticatedbackpacks:gold_backpack>, [
@@ -1742,9 +1686,9 @@ craftingTable.addShaped("lea3d2", <item:minecraft:crafting_table>, [
 ]);
 
 craftingTable.addShaped("lead2", <item:minecraft:lead>, [
-    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>],
-    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:hemp_fiber>]
+    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, air],
+    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, air],
+    [air, air, <item:immersiveengineering:hemp_fiber>]
 ]);
 
 craftingTable.addShaped("grout_nether33", <item:tconstruct:nether_grout>*8, [
@@ -1778,20 +1722,19 @@ craftingTable.addShaped("blastbrick", <item:immersiveengineering:blastbrick>*3, 
 ]);
 craftingTable.addShaped("medicen", <item:marbledsfirstaid:medicine_bottle>*3, [
     [<item:metallictinkering:tin_nugget>, <tag:items:forge:ingots/tin>, <item:metallictinkering:tin_nugget>],
-    [<tag:items:forge:glass>, <item:minecraft:air>, <tag:items:forge:glass>],
-    [<item:minecraft:air>, <tag:items:forge:glass>, <item:minecraft:air>]
+    [<tag:items:forge:glass>, air, <tag:items:forge:glass>],
+    [air, <tag:items:forge:glass>, air]
 ]);
 
 craftingTable.addShaped("brewing", <item:minecraft:brewing_stand>, [
     [<item:immersiveengineering:stick_steel>, <item:immersiveengineering:stick_iron>, <item:immersiveengineering:stick_steel>],
-    [<item:minecraft:air>, <item:immersiveengineering:stick_iron>, <item:minecraft:air>],
+    [air, <item:immersiveengineering:stick_iron>, air],
     [<tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>, <tag:items:minecraft:stone_crafting_materials>]
 ]);
 
 craftingTable.addShaped("grout_nether2", <item:tconstruct:scorched_bricks>*4, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>, <item:minecraft:air>],
-    [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>, <item:minecraft:air>]
+    [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>],
+    [<item:tconstruct:scorched_brick>, <item:tconstruct:scorched_brick>]
 ]);
 
 craftingTable.addShapeless(
@@ -1804,49 +1747,49 @@ craftingTable.addShapeless(
 );
 craftingTable.addShaped("grout_nether4", <item:tconstruct:nether_grout>*2, [
     [<item:create:cut_scoria_bricks>, <item:minecraft:bricks>, <item:minecraft:clay>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air, air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("grout_nether5", <item:tconstruct:nether_grout>*2, [
     [<item:quark:jasper_bricks>, <item:minecraft:bricks>, <item:minecraft:clay>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air, air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("grout_nether1", <item:tconstruct:nether_grout>*2, [
     [<item:create:cut_crimsite_bricks>, <item:minecraft:bricks>, <item:minecraft:clay>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air, air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("grout_nether", <item:tconstruct:nether_grout>*2, [
     [<item:quark:granite_bricks>, <item:minecraft:bricks>, <item:minecraft:clay>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air, air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("club", <item:magistuarmory:club>, [
-    [<item:minecraft:air>, <tag:items:minecraft:logs>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:regions_unexplored:branches>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:regions_unexplored:branches>, <item:minecraft:air>]
+    [air, <tag:items:minecraft:logs>, air],
+    [air, <tag:items:regions_unexplored:branches>, air],
+    [air, <tag:items:regions_unexplored:branches>, air]
 ]);
 
 craftingTable.addShaped("ship4", <item:alekiships:anchor>, [
     [<item:metallictinkering:tin_nugget>, <item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_nugget>],
-    [<item:minecraft:air>, <item:metallictinkering:tin_ingot>, <item:minecraft:air>],
+    [air, <item:metallictinkering:tin_ingot>, air],
     [<item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_block>, <item:metallictinkering:tin_ingot>]
 ]);
 
 craftingTable.addShaped("ship2", <item:alekiships:cleat>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [air, air, air],
     [<item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>],
-    [<item:metallictinkering:tin_nugget>, <item:minecraft:air>, <item:metallictinkering:tin_nugget>]
+    [<item:metallictinkering:tin_nugget>, air, <item:metallictinkering:tin_nugget>]
 ]);
 
 craftingTable.addShaped("ship", <item:alekiships:oarlock>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:metallictinkering:tin_ingot>, <item:minecraft:air>],
+    [air, air, air],
+    [air, <item:metallictinkering:tin_ingot>, air],
     [<item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>]
 ]);
 
@@ -1858,7 +1801,7 @@ craftingTable.addShaped("fermjar", <item:vintagedelight:fermenting_jar>, [
 
 craftingTable.addShaped("brick_furnance_recipe", <item:clayable:brick_furnance>, [
     [<tag:items:minecraft:logs>, <item:minecraft:brick>, <tag:items:minecraft:logs>],
-    [<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],
+    [<item:minecraft:brick>, air, <item:minecraft:brick>],
     [<tag:items:minecraft:logs>, <item:minecraft:brick>, <tag:items:minecraft:logs>]
 ]);
 
@@ -1869,13 +1812,13 @@ craftingTable.addShaped("brick_recipe", <item:minecraft:brick>*4, [
 ]);
  
 craftingTable.addShaped("leaf_armor1", <item:toughasnails:leaf_boots>.withTag({display: {color: 6462505}}), [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<tag:items:minecraft:leaves>, <item:minecraft:air>, <tag:items:minecraft:leaves>],
+    [air, air, air],
+    [<tag:items:minecraft:leaves>, air, <tag:items:minecraft:leaves>],
     [<tag:items:minecraft:leaves>, <tag:items:regions_unexplored:branches>, <tag:items:minecraft:leaves>]
 ]);
 
 craftingTable.addShaped("leaf_armor2", <item:toughasnails:leaf_helmet>.withTag({display: {color: 6462505}}), [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [air, air, air],
     [<tag:items:minecraft:leaves>, <tag:items:minecraft:leaves>, <tag:items:minecraft:leaves>],
     [<tag:items:minecraft:leaves>, <tag:items:regions_unexplored:branches>, <tag:items:minecraft:leaves>]
 ]);
@@ -1883,7 +1826,7 @@ craftingTable.addShaped("leaf_armor2", <item:toughasnails:leaf_helmet>.withTag({
 craftingTable.addShaped("leaf_armor3", <item:toughasnails:leaf_leggings>.withTag({display: {color: 6462505}}), [
     [<tag:items:minecraft:leaves>, <tag:items:minecraft:leaves>, <tag:items:minecraft:leaves>],
     [<tag:items:minecraft:leaves>, <tag:items:regions_unexplored:branches>, <tag:items:minecraft:leaves>],
-    [<tag:items:minecraft:leaves>, <item:minecraft:air>, <tag:items:minecraft:leaves>]
+    [<tag:items:minecraft:leaves>, air, <tag:items:minecraft:leaves>]
 ]);
 
 craftingTable.addShaped("leaf_armor4", <item:toughasnails:leaf_chestplate>, [
@@ -1893,15 +1836,15 @@ craftingTable.addShaped("leaf_armor4", <item:toughasnails:leaf_chestplate>, [
 ]);
 
 craftingTable.addShaped("leather_armor1", <item:minecraft:leather_boots>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>],
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>]
+    [air, air, air],
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>],
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>]
 ]);
 
 craftingTable.addShaped("leather_armor2", <item:minecraft:leather_leggings>, [
     [<item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>],
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>],
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>]
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>],
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>]
 ]);
 
 // PICK HEAD - pointy triangle shape
@@ -2017,33 +1960,32 @@ craftingTable.addShaped("treated_wood_shield_core", <item:tconstruct:shield_core
 ]);
 
 craftingTable.addShaped("leather_armor3", <item:minecraft:leather_chestplate>, [
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>],
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>],
     [<item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>],
     [<item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>]
 ]);
 
 craftingTable.addShaped("leather_armor4", <item:minecraft:leather_helmet>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [air, air, air],
     [<item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>, <item:kapphobins_addons:sewnleather>],
-    [<item:kapphobins_addons:sewnleather>, <item:minecraft:air>, <item:kapphobins_addons:sewnleather>]
+    [<item:kapphobins_addons:sewnleather>, air, <item:kapphobins_addons:sewnleather>]
 ]);
 
 craftingTable.addShaped("leather_sewn", <item:kapphobins_addons:sewnleather>, [
-    [<item:minecraft:leather>, <item:minecraft:string>, <item:minecraft:air>],
-    [<item:minecraft:leather>, <item:minecraft:string>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:boneneedle>.anyDamage(), <item:minecraft:air>]
+    [<item:minecraft:leather>, <item:minecraft:string>, air],
+    [<item:minecraft:leather>, <item:minecraft:string>, air],
+    [air, <item:kapphobins_addons:boneneedle>.anyDamage(), air]
 ]);
 
 craftingTable.addShaped("flute", <item:supplementaries:flute>, [
-    [<item:minecraft:air>, <tag:items:regions_unexplored:branches>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:regions_unexplored:branches>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:regions_unexplored:branches>, <item:minecraft:air>]
+    [air, <tag:items:regions_unexplored:branches>, air],
+    [air, <tag:items:regions_unexplored:branches>, air],
+    [air, <tag:items:regions_unexplored:branches>, air]
 ]);
 
 craftingTable.addShaped("bone_needle", <item:kapphobins_addons:boneneedle>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:htm:bone_arrow_head>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:htm:bone_scrap>, <item:minecraft:air>]
+    [air, <item:htm:bone_arrow_head>],
+    [air, <item:htm:bone_scrap>]
 ]);
 
 val colors2 = [
@@ -2074,14 +2016,14 @@ val yarnColors = {
 
 for color in colors2 {
     craftingTable.addShaped("wool_yarn_" + color, <item:kapphobins_addons:${yarnColors[color]}>*4, [
-        [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+        [air, air, air],
         [<item:kapphobins_addons:boneneedle>.anyDamage(), <item:minecraft:${color}_wool>, <item:kapphobins_addons:boneneedle>.anyDamage()],
-        [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+        [air, air, air]
     ]);
 }
 
 craftingTable.addShaped("wool_armor1", <item:toughasnails:wool_helmet>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+    [air, air, air],
     [<tag:items:minecraft:wool_yarn>, <tag:items:minecraft:wool>, <tag:items:minecraft:wool_yarn>],
     [<tag:items:minecraft:wool>, <item:kapphobins_addons:boneneedle>.anyDamage(), <tag:items:minecraft:wool>]
 ]);
@@ -2095,79 +2037,68 @@ craftingTable.addShaped("wool_armor2", <item:toughasnails:wool_chestplate>, [
 craftingTable.addShaped("wool_armor3", <item:toughasnails:wool_leggings>, [
     [<tag:items:minecraft:wool>, <tag:items:minecraft:wool_yarn>, <tag:items:minecraft:wool>],
     [<tag:items:minecraft:wool_yarn>, <item:kapphobins_addons:boneneedle>.anyDamage(), <tag:items:minecraft:wool_yarn>],
-    [<tag:items:minecraft:wool>, <item:minecraft:air>, <tag:items:minecraft:wool>]
+    [<tag:items:minecraft:wool>, air, <tag:items:minecraft:wool>]
 ]);
 
 craftingTable.addShaped("wool_armor4", <item:toughasnails:wool_boots>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<tag:items:minecraft:wool_yarn>, <item:minecraft:air>, <tag:items:minecraft:wool_yarn>],
+    [air, air, air],
+    [<tag:items:minecraft:wool_yarn>, air, <tag:items:minecraft:wool_yarn>],
     [<tag:items:minecraft:wool>, <item:kapphobins_addons:boneneedle>.anyDamage(), <tag:items:minecraft:wool>]
 ]);
 
 craftingTable.addShaped("animal_carcase1", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:chicken_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:chicken_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase2", <item:minecraft:rabbit>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:rabbit_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:rabbit_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase4", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:duck_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:duck_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase5", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:grouse_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:grouse_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase6", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:pheasant_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:pheasant_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase7", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:quail_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:quail_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase8", <item:minecraft:chicken>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:turkey_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:turkey_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("animal_carcase9", <item:minecraft:scute>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:animaltrap:turtle_carcass>, <item:htm:flint_knife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, air],
+    [<item:animaltrap:turtle_carcass>, <item:htm:flint_knife>],
 ]);
 
 craftingTable.addShaped("bowl", <item:minecraft:bowl>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:kapphobins_addons:primalstoneknife>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:minecraft:wooden_slabs>, <item:minecraft:air>]
+    [air, <item:kapphobins_addons:primalstoneknife>],
+    [air, <tag:items:minecraft:wooden_slabs>]
 ]);
 
 craftingTable.addShaped("bowl2", <item:minecraft:bowl>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:forge:tools/knives>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:minecraft:wooden_slabs>, <item:minecraft:air>]
+    [air, <tag:items:forge:tools/knives>],
+    [air, <tag:items:minecraft:wooden_slabs>],
 ]);
 
 craftingTable.addShaped("bowl3", <item:minecraft:bowl>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:spartanweaponry:throwing_knives>, <item:minecraft:air>],
-    [<item:minecraft:air>, <tag:items:minecraft:wooden_slabs>, <item:minecraft:air>]
+    [air, <tag:items:spartanweaponry:throwing_knives>],
+    [air, <tag:items:minecraft:wooden_slabs>],
 ]);
 
 craftingTable.addShapeless(
@@ -2200,21 +2131,21 @@ craftingTable.addShapeless(
 
 
 craftingTable.addShaped("stonetool1", <item:kapphobins_addons:primalstoneknife>, [
-    [<item:minecraft:air>, <item:minecraft:cobblestone>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:htm:plant_string>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:minecraft:cobblestone>, air],
+    [air, <item:htm:plant_string>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("stonetool2", <item:kapphobins_addons:primalstoneaxe>, [
-    [<item:minecraft:cobblestone>, <item:htm:plant_string>, <item:minecraft:air>],
-    [<item:minecraft:cobblestone>, <item:minecraft:stick>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [<item:minecraft:cobblestone>, <item:htm:plant_string>, air],
+    [<item:minecraft:cobblestone>, <item:minecraft:stick>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("stonetool3", <item:kapphobins_addons:primalstonepickaxe>, [
     [<item:minecraft:cobblestone>, <item:htm:plant_string>, <item:minecraft:cobblestone>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [air, <item:minecraft:stick>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 
@@ -2229,7 +2160,7 @@ craftingTable.addShaped(
         }
     }),
     [
-        [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
+        [air, <item:minecraft:stick>, air],
         [<item:minecraft:stick>, <tag:items:minecraft:logs>, <item:minecraft:stick>],
         [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>, <tag:items:minecraft:logs>]
     ]
@@ -2244,52 +2175,51 @@ val colors = [
 
 for color in colors {
     craftingTable.addShaped("comfort_" + color, <item:comforts:sleeping_bag_${color}>, [
-        [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
+        [air, air, air],
         [<item:minecraft:${color}_wool>, <item:minecraft:${color}_wool>, <item:minecraft:${color}_wool>],
-        [<item:minecraft:air>, <item:kapphobins_addons:boneneedle>.anyDamage(), <item:minecraft:air>]
+        [air, <item:kapphobins_addons:boneneedle>.anyDamage(), air]
     ]);
 }
 
 craftingTable.addShaped("ropeandnail", <item:comforts:rope_and_nail>, [
-    [<tag:items:forge:string>, <tag:items:forge:string>, <item:minecraft:air>],
-    [<tag:items:forge:string>, <item:kapphobins_addons:boneneedle>.anyDamage(), <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [<tag:items:forge:string>, <tag:items:forge:string>, air],
+    [<tag:items:forge:string>, <item:kapphobins_addons:boneneedle>.anyDamage(), air],
+    [air, air, air]
 ]);
 
 craftingTable.addShaped("cookpot3", <item:farmersdelight:cooking_pot>, [
     [<item:minecraft:brick>, <item:kapphobins_addons:wooden_shovel_123>.anyDamage(), <item:minecraft:brick>],
-    [<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],
+    [<item:minecraft:brick>, air, <item:minecraft:brick>],
     [<item:minecraft:brick>, <item:minecraft:brick>, <item:minecraft:brick>]
 ]);
 
 craftingTable.addShaped("cookpot", <item:farmersdelight:stove>, [
     [<item:minecraft:brick>, <item:minecraft:brick>, <item:minecraft:brick>],
-    [<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:brick>],
+    [<item:minecraft:brick>, air, <item:minecraft:brick>],
     [<item:minecraft:brick>, <item:minecraft:campfire>.withTag({BlockStateTag: {lit: "false"}}), <item:minecraft:brick>]
 ]);
 
 craftingTable.addShaped("cookpot4", <item:farmersdelight:skillet>, [
-    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:brick>],
-    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:brick>],
-    [<item:minecraft:brick>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:minecraft:brick>, <item:minecraft:brick>],
+    [air, <item:minecraft:brick>, <item:minecraft:brick>],
+    [<item:minecraft:brick>, air, air]
 ]);
 
 craftingTable.addShaped("hammer", <item:immersiveengineering:hammer>, [
-    [<item:minecraft:air>, <item:metallictinkering:tin_block>, <item:minecraft:string>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:metallictinkering:tin_block>],
-    [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:metallictinkering:tin_block>, <item:minecraft:string>],
+    [air, <item:minecraft:stick>, <item:metallictinkering:tin_block>],
+    [<item:minecraft:stick>, air, air]
 ]);
 
 craftingTable.addShaped("hook", <item:kapphobins_addons:bone_hook>, [
-    [<item:minecraft:air>, <item:htm:bone_scrap>, <item:minecraft:air>],
-    [<item:htm:bone_arrow_head>, <item:htm:bone_scrap>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
+    [air, <item:htm:bone_scrap>],
+    [<item:htm:bone_arrow_head>, <item:htm:bone_scrap>],
 ]);
 
 craftingTable.addShaped("sieve", <item:clayable:sieve>, [
     [<item:minecraft:bone>, <item:minecraft:string>, <item:minecraft:bone>],
-    [<tag:items:minecraft:logs>, <item:minecraft:air>, <tag:items:minecraft:logs>],
-    [<tag:items:minecraft:logs>, <item:minecraft:air>, <tag:items:minecraft:logs>]
+    [<tag:items:minecraft:logs>, air, <tag:items:minecraft:logs>],
+    [<tag:items:minecraft:logs>, air, <tag:items:minecraft:logs>]
 ]);
 
 craftingTable.addShaped("dough", <item:farmersdelight:wheat_dough>, [
@@ -2297,39 +2227,39 @@ craftingTable.addShaped("dough", <item:farmersdelight:wheat_dough>, [
 ]);
 
 craftingTable.addShaped("stonecutter", <item:minecraft:stonecutter>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:quark:stone_vertical_slab>, <item:minecraft:air>],
+    [air, air, air],
+    [air, <item:quark:stone_vertical_slab>, air],
     [<item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:stone>]
 ]);
 
 craftingTable.addShaped("fishingrod", <item:minecraft:fishing_rod>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:stick>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:string>],
-    [<item:minecraft:stick>, <item:minecraft:air>, <item:kapphobins_addons:bone_hook>]
+    [air, air, <item:minecraft:stick>],
+    [air, <item:minecraft:stick>, <item:minecraft:string>],
+    [<item:minecraft:stick>, air, <item:kapphobins_addons:bone_hook>]
 ]);
 
 craftingTable.addShaped("quiver", <item:supplementaries:quiver>, [
-    [<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:leather>],
-    [<item:minecraft:leather>, <item:minecraft:air>, <item:minecraft:leather>],
-    [<item:minecraft:air>, <item:minecraft:leather>, <item:minecraft:air>]
+    [<item:minecraft:leather>, air, <item:minecraft:leather>],
+    [<item:minecraft:leather>, air, <item:minecraft:leather>],
+    [air, <item:minecraft:leather>, air]
 ]);
 
 craftingTable.addShaped("wooden", <item:kapphobins_addons:woodenhoe_123>, [
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]
+    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, air],
+    [air, <item:minecraft:stick>, air],
+    [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("smtihing", <item:minecraft:smithing_table>, [
-    [<item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>, <item:minecraft:air>],
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <item:minecraft:air>],
-    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, <item:minecraft:air>]
+    [<item:metallictinkering:tin_ingot>, <item:metallictinkering:tin_ingot>, air],
+    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, air],
+    [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, air]
 ]);
 
 craftingTable.addShaped("saddle", <item:minecraft:saddle>, [
     [<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>],
     [<item:minecraft:leather>, <item:minecraft:iron_ingot>, <item:minecraft:leather>],
-    [<item:magistuarmory:leather_strip>, <item:minecraft:air>, <item:magistuarmory:leather_strip>]
+    [<item:magistuarmory:leather_strip>, air, <item:magistuarmory:leather_strip>]
 ]); 
 
 craftingTable.addShaped("steel_chainmail", <item:magistuarmory:steel_chainmail>, [
