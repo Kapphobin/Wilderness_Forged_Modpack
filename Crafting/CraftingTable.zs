@@ -1230,12 +1230,6 @@ craftingTable.addShaped("nickel_parrying_dagger", <item:spartanweaponry:nickel_p
     [air, <item:kapphobins_addons:nickel_handle>]
 ]);
 
-// Invar Parrying Dagger
-craftingTable.addShaped("invar_parrying_dagger", <item:spartanweaponry:invar_parrying_dagger>, [
-    [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:invar"})],
-    [air, <item:tconstruct:tool_handle>.withTag({Material: "tconstruct:invar"})]
-]);
-
 // Constantan Parrying Dagger
 craftingTable.addShaped("constantan_parrying_dagger", <item:spartanweaponry:constantan_parrying_dagger>, [
     [air, <item:tconstruct:small_blade>.withTag({Material: "tconstruct:constantan"})],
