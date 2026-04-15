@@ -2023,19 +2023,19 @@ craftingTable.addShapeless(
 
 
 craftingTable.addShaped("stonetool1", <item:kapphobins_addons:primalstoneknife>, [
-    [air, <item:minecraft:cobblestone>, air],
+    [air, <tag:items:minecraft:stone_tool_materials>, air],
     [air, <item:htm:plant_string>, air],
     [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("stonetool2", <item:kapphobins_addons:primalstoneaxe>, [
-    [<item:minecraft:cobblestone>, <item:htm:plant_string>, air],
-    [<item:minecraft:cobblestone>, <item:minecraft:stick>, air],
+    [<tag:items:minecraft:stone_tool_materials>, <item:htm:plant_string>, air],
+    [<tag:items:minecraft:stone_tool_materials>, <item:minecraft:stick>, air],
     [air, <item:minecraft:stick>, air]
 ]);
 
 craftingTable.addShaped("stonetool3", <item:kapphobins_addons:primalstonepickaxe>, [
-    [<item:minecraft:cobblestone>, <item:htm:plant_string>, <item:minecraft:cobblestone>],
+    [<tag:items:minecraft:stone_tool_materials>, <item:htm:plant_string>, <tag:items:minecraft:stone_tool_materials>],
     [air, <item:minecraft:stick>, air],
     [air, <item:minecraft:stick>, air]
 ]);
