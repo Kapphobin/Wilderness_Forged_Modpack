@@ -48,9 +48,6 @@ import crafttweaker.api.entity.EntityType;
 
 <entitytype:minecraft:turtle>
     .addLootModifier("extra_bone_drop_turtle", CommonLootModifiers.add(<item:minecraft:bone>));
-
-<entitytype:minecraft:bee>
-    .addLootModifier("extra_bone_drop_bee", CommonLootModifiers.add(<item:minecraft:bone>));
 // Author: Kapphobin
 // Project: Wilderness Forged
 // ID: KP-2026-CORE-001
