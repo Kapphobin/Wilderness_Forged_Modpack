@@ -7,6 +7,8 @@ val air = <item:minecraft:air>;
 val planks = <tag:items:minecraft:planks>;
 val tw = <item:immersiveengineering:treated_wood_horizontal>;
 val stick = <tag:items:forge:rods/wooden>;
+val slab = <tag:items:minecraft:wooden_slabs>;
+val pot = <tag:items:minecraft:decorated_pot_ingredients>;
 
 // Removed stuff
 craftingTable.remove(<item:chipped:tinkering_table>);
@@ -14,6 +16,23 @@ craftingTable.remove(<item:supplementaries:bomb>);
 craftingTable.remove(<item:immersivegeology:hammer_bronze>); 
 craftingTable.remove(<item:simpleshops:simple_shop>); 
 craftingTable.remove(<item:tconstruct:seared_bricks>); 
+craftingTable.remove(<item:pottery:sealed_pot_light_gray>);
+craftingTable.remove(<item:pottery:sealed_pot_cyan>);
+craftingTable.remove(<item:pottery:sealed_pot_purple>);
+craftingTable.remove(<item:pottery:sealed_pot_blue>);
+craftingTable.remove(<item:pottery:sealed_pot_brown>);
+craftingTable.remove(<item:pottery:sealed_pot_green>);
+craftingTable.remove(<item:pottery:sealed_pot_red>);
+craftingTable.remove(<item:pottery:sealed_pot_black>);
+craftingTable.remove(<item:pottery:sealed_pot_gray>);
+craftingTable.remove(<item:pottery:sealed_pot_pink>);
+craftingTable.remove(<item:pottery:sealed_pot_lime>);
+craftingTable.remove(<item:pottery:sealed_pot_yellow>);
+craftingTable.remove(<item:pottery:sealed_pot_light_blue>);
+craftingTable.remove(<item:pottery:sealed_pot_magenta>);
+craftingTable.remove(<item:pottery:sealed_pot_white>);
+craftingTable.remove(<item:pottery:sealed_pot_orange>);
+craftingTable.remove(<item:pottery:sealed_pot_blank>);
 //COPY PASTE READY
 
 craftingTable.remove(<item:minecraft:air>);
@@ -28,6 +47,124 @@ craftingTable.addShaped("recipename2", <item:minecraft:air>, [
 
 //ADDING NEW RECIPES 
 
+// Blank
+craftingTable.addShaped("sealed_pot_blank", <item:pottery:sealed_pot_blank>, [
+   [air, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// White
+craftingTable.addShaped("sealed_pot_white", <item:pottery:sealed_pot_white>, [
+   [<item:minecraft:white_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Orange
+craftingTable.addShaped("sealed_pot_orange", <item:pottery:sealed_pot_orange>, [
+   [<item:minecraft:orange_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Magenta
+craftingTable.addShaped("sealed_pot_magenta", <item:pottery:sealed_pot_magenta>, [
+   [<item:minecraft:magenta_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Light Blue
+craftingTable.addShaped("sealed_pot_light_blue", <item:pottery:sealed_pot_light_blue>, [
+   [<item:minecraft:light_blue_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Yellow
+craftingTable.addShaped("sealed_pot_yellow", <item:pottery:sealed_pot_yellow>, [
+   [<item:minecraft:yellow_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Lime
+craftingTable.addShaped("sealed_pot_lime", <item:pottery:sealed_pot_lime>, [
+   [<item:minecraft:lime_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Pink
+craftingTable.addShaped("sealed_pot_pink", <item:pottery:sealed_pot_pink>, [
+   [<item:minecraft:pink_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Gray
+craftingTable.addShaped("sealed_pot_gray", <item:pottery:sealed_pot_gray>, [
+   [<item:minecraft:gray_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Light Gray
+craftingTable.addShaped("sealed_pot_light_gray", <item:pottery:sealed_pot_light_gray>, [
+   [<item:minecraft:light_gray_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Cyan
+craftingTable.addShaped("sealed_pot_cyan", <item:pottery:sealed_pot_cyan>, [
+   [<item:minecraft:cyan_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Purple
+craftingTable.addShaped("sealed_pot_purple", <item:pottery:sealed_pot_purple>, [
+   [<item:minecraft:purple_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Blue
+craftingTable.addShaped("sealed_pot_blue", <item:pottery:sealed_pot_blue>, [
+   [<item:minecraft:blue_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Brown
+craftingTable.addShaped("sealed_pot_brown", <item:pottery:sealed_pot_brown>, [
+   [<item:minecraft:brown_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Green
+craftingTable.addShaped("sealed_pot_green", <item:pottery:sealed_pot_green>, [
+   [<item:minecraft:green_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Red
+craftingTable.addShaped("sealed_pot_red", <item:pottery:sealed_pot_red>, [
+   [<item:minecraft:red_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
+
+// Black
+craftingTable.addShaped("sealed_pot_black", <item:pottery:sealed_pot_black>, [
+   [<item:minecraft:black_dye>, slab, air],
+   [pot, air, pot],
+   [pot, pot, pot]
+]);
 craftingTable.addShaped("recipena12312412me2", <item:tconstruct:seared_bricks>*4, [
    [<item:tconstruct:seared_brick>, <item:tconstruct:seared_brick>],
    [<item:tconstruct:seared_brick>, <item:tconstruct:seared_brick>]
