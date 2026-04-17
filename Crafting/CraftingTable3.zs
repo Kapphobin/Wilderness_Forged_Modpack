@@ -221,15 +221,13 @@ recipes.remove(<item:minecraft:golden_hoe>);
 recipes.remove(<item:minecraft:iron_hoe>);
 
 craftingTable.addShaped("wooden_shovel_head", <item:kapphobins_addons:wooden_shovel_head>, [
-  [air, planks, air],
-  [air, planks, air],
-  [air, air, air]
+  [air, planks],
+  [air, planks]
 ]);
 
 craftingTable.addShaped("stone_shovel_head", <item:kapphobins_addons:stone_shovel_head>, [
-  [air, <tag:items:quark:stone_tool_materials>, air],
-  [air, <tag:items:quark:stone_tool_materials>, air],
-  [air, air, air]
+  [air, <tag:items:quark:stone_tool_materials>],
+  [air, <tag:items:quark:stone_tool_materials>]
 ]);
 craftingTable.addShaped("wooden_shovel", <item:kapphobins_addons:wooden_shovel_123>, [
   [air, <item:kapphobins_addons:wooden_shovel_head>, air],
@@ -261,9 +259,8 @@ craftingTable.addShaped("diamond_shovel", <item:minecraft:diamond_shovel>, [
   [air, <tag:items:forge:rods/wooden>, air]
 ]);
 craftingTable.addShaped("raw_clay_shovel_head", <item:kapphobins_addons:raw_clay_shovel_head>, [
-  [air, <tag:items:forge:clay>, air],
-  [air, <tag:items:forge:clay>, air],
-  [air, air, air]
+  [air, <tag:items:forge:clay>],
+  [air, <tag:items:forge:clay>]
 ]);
 craftingTable.addShaped("raw_clay_shovel", <item:clayable:raw_clay_shovel>, [
   [air, <item:kapphobins_addons:raw_clay_shovel_head>, air],
@@ -342,16 +339,14 @@ craftingTable.addShaped("steel_hoe", <item:immersiveengineering:hoe_steel>, [
 ]);
 // Wooden Hoe Head
 craftingTable.addShaped("wooden_hoe_head", <item:kapphobins_addons:wooden_hoe_head>, [
-  [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>, air],
-  [air, <tag:items:minecraft:planks>, air],
-  [air, air, air]
+  [<tag:items:minecraft:planks>, <tag:items:minecraft:planks>],
+  [air, <tag:items:minecraft:planks>]
 ]);
 
 // Stone Hoe Head
 craftingTable.addShaped("stone_hoe_head", <item:kapphobins_addons:stonehoehead>, [
-  [<tag:items:minecraft:stone_tool_materials>, <tag:items:minecraft:stone_tool_materials>, air],
-  [air, <tag:items:minecraft:stone_tool_materials>, air],
-  [air, air, air]
+  [<tag:items:minecraft:stone_tool_materials>, <tag:items:minecraft:stone_tool_materials>],
+  [air, <tag:items:minecraft:stone_tool_materials>]
 ]);
 // Author: Kapphobin
 // Project: Wilderness Forged
