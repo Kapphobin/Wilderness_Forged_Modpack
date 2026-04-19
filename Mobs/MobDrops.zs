@@ -48,6 +48,18 @@ import crafttweaker.api.entity.EntityType;
 
 <entitytype:minecraft:turtle>
     .addLootModifier("extra_bone_drop_turtle", CommonLootModifiers.add(<item:minecraft:bone>));
+<entitytype:minecraft:chicken>
+    .addLootModifier("remove_chicken_carcass", CommonLootModifiers.remove(<item:animaltrap:chicken_carcass>));
+<entitytype:minecraft:chicken>
+    .addLootModifier("add_raw_chicken", CommonLootModifiers.add(<item:minecraft:chicken>));
+<entitytype:minecraft:chicken>
+    .addLootModifier("add_feather", CommonLootModifiers.add(<item:minecraft:feather>));
+<entitytype:minecraft:rabbit>
+    .addLootModifier("remove_rabbit_carcass", CommonLootModifiers.remove(<item:animaltrap:rabbit_carcass>));
+<entitytype:minecraft:rabbit>
+    .addLootModifier("add_raw_rabbit", CommonLootModifiers.add(<item:minecraft:rabbit>));
+<entitytype:minecraft:rabbit>
+    .addLootModifier("add_rabbit_hide", CommonLootModifiers.add(<item:minecraft:rabbit_hide>));
 // Author: Kapphobin
 // Project: Wilderness Forged
 // ID: KP-2026-CORE-001
