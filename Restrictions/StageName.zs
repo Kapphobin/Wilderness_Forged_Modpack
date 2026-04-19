@@ -1,8 +1,7 @@
 import mods.itemstages.ItemStages;
 
 val stageName = "stage1";  //Lower paleoltichic
-//test
-// Hide items completely from JEI Stage1
+
 ItemStages.restrict(<item:minecraft:string>, stageName);
 ItemStages.restrict(<item:kapphobins_addons:primalstoneknife>, stageName);
 ItemStages.restrict(<item:kapphobins_addons:primalstoneaxe>, stageName);
@@ -884,34 +883,50 @@ ItemStages.restrict(<item:tconstruct:large_ender_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:medium_sky_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:large_sky_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:ichor_slime_crystal_block>, stageName);
-
+ItemStages.restrict(<item:tconstruct:sky_enderbark_roots>, stageName);
+ItemStages.restrict(<item:tconstruct:earth_enderbark_roots>, stageName);
+ItemStages.restrict(<item:tconstruct:blood_slime_sapling>, stageName);
+ItemStages.restrict(<item:tconstruct:ichor_enderbark_roots>, stageName);
+ItemStages.restrict(<item:tconstruct:ender_enderbark_roots>, stageName);
+ItemStages.restrict(<item:tconstruct:sky_slime_dirt>, stageName);
+ItemStages.restrict(<item:tconstruct:ichor_slime_dirt>, stageName);
+ItemStages.restrict(<item:tconstruct:ender_slime_dirt>, stageName);
+ItemStages.restrict(<item:tconstruct:earth_slime_tall_grass>, stageName);
+ItemStages.restrict(<item:tconstruct:ender_slime_tall_grass>, stageName);
+ItemStages.restrict(<item:tconstruct:ender_slime_fern>, stageName);
+ItemStages.restrict(<item:tconstruct:ender_slime_vine>, stageName);
+ItemStages.restrict(<item:tconstruct:earth_slime_fern>, stageName);
+ItemStages.restrict(<item:tconstruct:sky_slime_vine>, stageName);
+ItemStages.restrict(<item:tconstruct:sky_slime_fern>, stageName);
+ItemStages.restrict(<item:tconstruct:sky_slime_tall_grass>, stageName);
+ItemStages.restrict(<item:minecraft:melon_slice>, stageName);
+ItemStages.restrict(<item:minecraft:sandstone>, stageName);
+ItemStages.restrict(<item:minecraft:red_sandstone>, stageName);
 ItemStages.restrict(<item:tconstruct:small_ichor_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:medium_ichor_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:large_ichor_slime_crystal_bud>, stageName);
-
 ItemStages.restrict(<item:tconstruct:ender_slime_crystal_block>, stageName);
 ItemStages.restrict(<item:tconstruct:small_ender_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:medium_ender_slime_crystal_bud>, stageName);
-
 ItemStages.restrict(<item:tconstruct:small_sky_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:sky_slime_crystal_block>, stageName);
-
+ItemStages.restrict(<item:superbwarfare:raw_silver>, stageName);
+ItemStages.restrict(<item:superbwarfare:scheelite>, stageName);
+ItemStages.restrict(<item:superbwarfare:galena>, stageName);
+ItemStages.restrict(<item:solcarrot:food_book>, stageName);
 ItemStages.restrict(<item:tconstruct:large_earth_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:medium_earth_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:small_earth_slime_crystal_bud>, stageName);
 ItemStages.restrict(<item:tconstruct:earth_slime_crystal_block>, stageName);
-
 ItemStages.restrict(<item:immersivegeology:evaporate_crystal_rocksalt>, stageName);
 ItemStages.restrict(<item:immersivegeology:evaporate_crystal_saltpeter>, stageName);
 ItemStages.restrict(<item:immersivegeology:evaporate_crystal_carnallite>, stageName);
-
 ItemStages.restrict(<item:chipped:packed_mud_bricks>, stageName);
 ItemStages.restrict(<item:veggiesdelight:garlic>, stageName);
 ItemStages.restrict(<item:veggiesdelight:cauliflower>, stageName);
 ItemStages.restrict(<item:veggiesdelight:broccoli>, stageName);
 ItemStages.restrict(<item:veggiesdelight:bellpepper>, stageName);
 ItemStages.restrict(<item:veggiesdelight:dandelion_leaf>, stageName);
-
 ItemStages.restrict(<item:veggiesdelight:wild_broccoli>, stageName);
 ItemStages.restrict(<item:veggiesdelight:wild_cauliflowers>, stageName);
 ItemStages.restrict(<item:veggiesdelight:wild_garlic>, stageName);
@@ -919,19 +934,15 @@ ItemStages.restrict(<item:veggiesdelight:wild_sweet_potatoes>, stageName);
 ItemStages.restrict(<item:veggiesdelight:wild_turnips>, stageName);
 ItemStages.restrict(<item:veggiesdelight:wild_zucchinis>, stageName);
 ItemStages.restrict(<item:veggiesdelight:wild_bellpeppers>, stageName);
-
 ItemStages.restrict(<item:veggiesdelight:mature_dandelion>, stageName);
-
 ItemStages.restrict(<item:minecraft:mud_bricks>, stageName);
 ItemStages.restrict(<item:minecraft:lapis_block>, stageName);
 ItemStages.restrict(<item:minecraft:lapis_lazuli>, stageName);
 ItemStages.restrict(<item:minecraft:amethyst_shard>, stageName);
-
 ItemStages.restrict(<item:tconstruct:knightmetal_shard>, stageName);
 ItemStages.restrict(<item:tconstruct:knightmetal_cluster>, stageName);
 ItemStages.restrict(<item:tconstruct:cobalt_shard>, stageName);
 ItemStages.restrict(<item:tconstruct:cobalt_cluster>, stageName);
-
 ItemStages.restrict(<item:tconstruct:earth_slime_crystal>, stageName);
 ItemStages.restrict(<item:tconstruct:earth_ender_slime_grass>, stageName);
 ItemStages.restrict(<item:tconstruct:earth_ichor_slime_grass>, stageName);
@@ -944,7 +955,6 @@ ItemStages.restrict(<item:tconstruct:sky_sky_slime_grass>, stageName);
 ItemStages.restrict(<item:tconstruct:sky_earth_slime_grass>, stageName);
 ItemStages.restrict(<item:tconstruct:sky_vanilla_slime_grass>, stageName);
 ItemStages.restrict(<item:tconstruct:sky_slime_grass_seeds>, stageName);
-
 ItemStages.restrict(<item:vintagedelight:cucumber>, stageName);
 ItemStages.restrict(<item:vintagedelight:gearo_berry>, stageName);
 ItemStages.restrict(<item:vintagedelight:ghost_pepper>, stageName);
@@ -965,13 +975,11 @@ ItemStages.restrict(<item:veggiesdelight:cauliflower_floret>, stageName);
 ItemStages.restrict(<item:veggiesdelight:baked_sweet_potato>, stageName);
 ItemStages.restrict(<item:veggiesdelight:smoked_bellpepper>, stageName);
 ItemStages.restrict(<item:veggiesdelight:garlic_clove>, stageName);
-
 ItemStages.restrict(<item:veggiesdelight:zucchini_seeds>, stageName);
 ItemStages.restrict(<item:veggiesdelight:turnip_seeds>, stageName);
 ItemStages.restrict(<item:veggiesdelight:cauliflower_seeds>, stageName);
 ItemStages.restrict(<item:veggiesdelight:broccoli_seeds>, stageName);
 ItemStages.restrict(<item:veggiesdelight:bellpepper_seeds>, stageName);
-
 ItemStages.restrict(<item:veggiesdelight:zucchini>, stageName);
 ItemStages.restrict(<item:veggiesdelight:turnip>, stageName);
 ItemStages.restrict(<item:veggiesdelight:sweet_potato>, stageName);

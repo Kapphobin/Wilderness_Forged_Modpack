@@ -1,8 +1,17 @@
 import mods.itemstages.ItemStages;
 
-val stageUnobtainable = "unobtained_items_stage";
+val stageUnobtainable = "Unobtainable";
 
 // Unobtainable Items
+ItemStages.restrict(<item:ftbquests:task_screen_configurator>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:screen_7>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:screen_5>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:screen_3>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:screen_1>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:loot_crate_opener>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:detector>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:stage_barrier>, stageUnobtainable);
+ItemStages.restrict(<item:ftbquests:barrier>, stageUnobtainable);
 ItemStages.restrict(<item:alexsmobs:spawn_egg_seagull>, stageUnobtainable);
 ItemStages.restrict(<item:alexsmobs:spawn_egg_tiger>, stageUnobtainable);
 ItemStages.restrict(<item:alexsmobs:spawn_egg_cosmic_cod>, stageUnobtainable);
@@ -296,9 +305,65 @@ ItemStages.restrict(<item:tconstruct:tough_binding>.withTag({Material: "tconstru
 ItemStages.restrict(<item:tconstruct:tough_binding>.withTag({Material: "tconstruct:venombone"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:bow_limb>.withTag({Material: "tconstruct:bone"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:bow_limb>.withTag({Material: "tconstruct:venombone"}), stageUnobtainable);
-// Full ZenScript to set all listed Tinkers' tools as unobtainable
+ItemStages.restrict(<item:immersiveengineering:capacitor_creative>, stageUnobtainable);
 
-// --- Bow Limbs ---
+ItemStages.restrict(<item:immersivetechnology:barrel_creative>, stageUnobtainable);
+ItemStages.restrict(<item:immersivetechnology:rotor_creative>, stageUnobtainable);
+ItemStages.restrict(<item:immersivetechnology:heat_creative>, stageUnobtainable);
+ItemStages.restrict(<item:immersivetechnology:crate_creative>, stageUnobtainable);
+
+ItemStages.restrict(<item:create:creative_crate>, stageUnobtainable);
+ItemStages.restrict(<item:create:creative_fluid_tank>, stageUnobtainable);
+ItemStages.restrict(<item:create:creative_motor>, stageUnobtainable);
+ItemStages.restrict(<item:create:handheld_worldshaper>, stageUnobtainable);
+
+ItemStages.restrict(<item:tacz:ammo_box>.withTag({AllTypeCreative: 1}), stageUnobtainable);
+ItemStages.restrict(<item:tacz:ammo_box>.withTag({Creative: 1}), stageUnobtainable);
+
+ItemStages.restrict(<item:simpleshops:creative_simple_shop>, stageUnobtainable);
+
+ItemStages.restrict(<item:superbwarfare:creative_charging_station>, stageUnobtainable);
+ItemStages.restrict(<item:superbwarfare:creative_ammo_box>, stageUnobtainable);
+
+ItemStages.restrict(<item:explosionoverhaul:vinlanx_the_light>, stageUnobtainable);
+
+ItemStages.restrict(<item:valkyrienskies:ship_creator>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:ship_remover>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:ship_assembler>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:ship_creator_smaller>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:area_assembler>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:physics_entity_creator>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:connection_checker>, stageUnobtainable);
+
+ItemStages.restrict(<item:valkyrienskies:test_antigrav>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:test_thruster>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:test_wing>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:test_flap>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:test_hinge>, stageUnobtainable);
+ItemStages.restrict(<item:valkyrienskies:test_chair>, stageUnobtainable);
+ItemStages.restrict(<item:create:creative_blaze_cake>, stageUnobtainable);
+
+ItemStages.restrict(<item:createbigcannons:cannon_crafting_wand>, stageUnobtainable);
+ItemStages.restrict(<item:createbigcannons:creative_autocannon_ammo_container>, stageUnobtainable);
+
+ItemStages.restrict(<item:minecraft:debug_stick>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:barrier>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:structure_void>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:structure_block>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:jigsaw>, stageUnobtainable);
+
+ItemStages.restrict(<item:minecraft:command_block_minecart>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:repeating_command_block>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:chain_command_block>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:command_block>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "6"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>, stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "14"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "5"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "13"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "4"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "12"}}), stageUnobtainable);
+ItemStages.restrict(<item:minecraft:light>.withTag({BlockStateTag: {level: "3"}}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:bow_limb>.withTag({Material: "tconstruct:necrotic_bone"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:bow_limb>.withTag({Material: "tconstruct:blazing_bone"}), stageUnobtainable);
 ItemStages.restrict(<item:tconstruct:bow_limb>.withTag({Material: "tconstruct:bone"}), stageUnobtainable);

@@ -1,73 +1,7 @@
 import mods.itemstages.ItemStages;
 
 val stageName8 = "stage8";//Renaissance Age
-val stageName9 = "stage9";//Industrial Age
-val stageName10 = "stage10";//Modern Age
-val stageName11 = "stage11";//Atomic Age
-val stageName12 = "stage12";//Space Age
 
-// Hide items completely from JEI Stage12
-// Hide items completely from JEI Stage11
-// Hide items completely from JEI Stage10
-// Hide items completely from JEI Stage9
-ItemStages.restrict(<item:spartanweaponry:aluminum_warhammer>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_battle_hammer>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_greatsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_warhammer>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_battle_hammer>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_halberd>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_halberd>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_spear>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_spear>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_halberd>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_halberd>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_spear>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_spear>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_saber>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_throwing_knife>.withTag({AmmoUsed: 0, UUID: [-1951116662, 1734102673, -1896651250, 1539611811], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_boomerang>.withTag({AmmoUsed: 0, UUID: [100028228, 786580056, -1332444842, 1455537947], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_battle_hammer>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_pike>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_katana>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_longsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_dagger>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_boomerang>.withTag({AmmoUsed: 0, UUID: [-1096647832, -989970041, -1811039569, 747830997], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_pike>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_saber>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_longsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_katana>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_dagger>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:nickel_saber>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:nickel_longsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_battleaxe>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_flanged_mace>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_battleaxe>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:nickel_katana>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_javelin>.withTag({AmmoUsed: 0, UUID: [462617846, 912868051, -1476645134, 1750181635], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_tomahawk>.withTag({AmmoUsed: 0, UUID: [961806075, 1513442365, -1395429060, 2062095544], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_heavy_crossbow>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_longbow>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_javelin>.withTag({AmmoUsed: 0, UUID: [-1101428603, 1106133868, -1965188712, -1501784011], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_boomerang>.withTag({AmmoUsed: 0, UUID: [-1096647832, -989970041, -1811039569, 747830997], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_tomahawk>.withTag({AmmoUsed: 0, UUID: [1774038139, 1086276951, -1513732313, -355908919], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_heavy_crossbow>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:nickel_throwing_knife>.withTag({AmmoUsed: 0, UUID: [683117063, -1172027086, -1172765102, -1566711927], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:invar_saber>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:invar_longsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:invar_katana>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:invar_throwing_knife>.withTag({AmmoUsed: 0, UUID: [1210840157, 895107932, -2088179776, 1204901651], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:constantan_saber>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:constantan_longsword>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:constantan_katana>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_lance>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:aluminum_glaive>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_lance>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_longbow>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:platinum_scythe>, stageName9);
-ItemStages.restrict(<item:spartanweaponry:constantan_throwing_knife>.withTag({AmmoUsed: 0, UUID: [-844691684, 674252120, -1541870065, -1833362779], Original: 1}), stageName9);
-ItemStages.restrict(<item:spartanweaponry:constantan_battleaxe>, stageName9);
-// Hide items completely from JEI Stage8
-// Restrictions
 ItemStages.restrict(<item:marbellous:polished_dark_serpentine_button>, stageName8);
 ItemStages.restrict(<item:marbellous:polished_dark_serpentine_pressure_plate>, stageName8);
 ItemStages.restrict(<item:marbellous:dark_serpentine_button>, stageName8);
@@ -171,73 +105,55 @@ ItemStages.restrict(<item:smallships:spruce_brigg>, stageName8);
 ItemStages.restrict(<item:antiqueatlas:empty_antique_atlas>, stageName8);
 ItemStages.restrict(<item:supplementaries:globe>, stageName8);
 ItemStages.restrict(<item:supplementaries:globe_sepia>, stageName8);
-
 ItemStages.restrict(<item:coinsje:gold_coin_pile>, stageName8);
 ItemStages.restrict(<item:minecraft:tnt>, stageName8);
-
 ItemStages.restrict(<item:createbigcannons:log_cannon_end>, stageName8);
 ItemStages.restrict(<item:spartanweaponry:dynamite>, stageName8);
 ItemStages.restrict(<item:createbigcannons:fixed_cannon_mount>, stageName8);
-
 ItemStages.restrict(<item:create:mechanical_press>, stageName8);
 ItemStages.restrict(<item:createbigcannons:cannon_mount_extension>, stageName8);
 ItemStages.restrict(<item:create:mechanical_mixer>, stageName8);
 ItemStages.restrict(<item:create:mechanical_saw>, stageName8);
 ItemStages.restrict(<item:createbigcannons:cannon_mount>, stageName8);
-
 ItemStages.restrict(<item:createbigcannons:big_cartridge>.withTag({Power: 4}), stageName8);
-
 ItemStages.restrict(<item:create:deployer>, stageName8);
 ItemStages.restrict(<item:immersiveengineering:windmill>, stageName8);
-
 ItemStages.restrict(<item:createbigcannons:wrought_iron_cannon_end>, stageName8);
 ItemStages.restrict(<item:createbigcannons:wrought_iron_cannon_chamber>, stageName8);
 ItemStages.restrict(<item:createbigcannons:solid_shot>, stageName8);
-
 ItemStages.restrict(<item:createbigcannons:big_cartridge>.withTag({Power: 0}), stageName8);
-
 ItemStages.restrict(<item:musketmod:cartridge>, stageName8);
 ItemStages.restrict(<item:createbigcannons:ram_rod>, stageName8);
 ItemStages.restrict(<item:createbigcannons:wrought_iron_drop_mortar_end>, stageName8);
 ItemStages.restrict(<item:boatload:large_dark_oak_boat>, stageName8);
 ItemStages.restrict(<item:boatload:mangrove_furnace_boat>, stageName8);
 ItemStages.restrict(<item:boatload:large_spruce_boat>, stageName8);
-
 ItemStages.restrict(<item:musketmod:musket_with_scope>, stageName8);
 ItemStages.restrict(<item:createbigcannons:log_cannon_chamber>, stageName8);
 ItemStages.restrict(<item:supplementaries:bomb>, stageName8);
-
 ItemStages.restrict(<item:musketmod:pistol>, stageName8);
 ItemStages.restrict(<item:musketmod:blunderbuss>, stageName8);
-
 ItemStages.restrict(<item:boatload:birch_furnace_boat>, stageName8);
 ItemStages.restrict(<item:musketmod:musket_with_bayonet>, stageName8);
-
 ItemStages.restrict(<item:siegemachines:mortar>, stageName8);
 ItemStages.restrict(<item:siegemachines:barrel>, stageName8);
 ItemStages.restrict(<item:musketmod:musket>, stageName8);
-
 ItemStages.restrict(<item:vs_eureka:dark_oak_ship_helm>, stageName8);
 ItemStages.restrict(<item:coinsje:gold_coin>, stageName8);
-
 ItemStages.restrict(<item:siegemachines:culverin>, stageName8);
 ItemStages.restrict(<item:siegemachines:cannonball>, stageName8);
-
 ItemStages.restrict(<item:boatload:large_crimson_boat>, stageName8);
 ItemStages.restrict(<item:boatload:crimson_furnace_boat>, stageName8);
 ItemStages.restrict(<item:boatload:large_cherry_boat>, stageName8);
 ItemStages.restrict(<item:boatload:dark_oak_furnace_boat>, stageName8);
 ItemStages.restrict(<item:boatload:cherry_furnace_boat>, stageName8);
-
 ItemStages.restrict(<item:boatload:large_warped_boat>, stageName8);
 ItemStages.restrict(<item:boatload:warped_furnace_boat>, stageName8);
-
 ItemStages.restrict(<item:boatload:large_acacia_boat>, stageName8);
 ItemStages.restrict(<item:boatload:large_mangrove_boat>, stageName8);
 ItemStages.restrict(<item:boatload:large_birch_boat>, stageName8);
 ItemStages.restrict(<item:boatload:acacia_furnace_boat>, stageName8);
 ItemStages.restrict(<item:boatload:large_jungle_boat>, stageName8);
-
 ItemStages.restrict(<item:cosmeticarmoursmod:yorkshire_cap_helmet>, stageName8);
 ItemStages.restrict(<item:magistuarmory:maximilian_boots>, stageName8);
 ItemStages.restrict(<item:marbellous:sodaline_pressure_plate>, stageName8);
