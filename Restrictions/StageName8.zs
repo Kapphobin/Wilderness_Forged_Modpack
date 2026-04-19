@@ -157,6 +157,7 @@ ItemStages.restrict(<item:boatload:large_jungle_boat>, stageName8);
 ItemStages.restrict(<item:cosmeticarmoursmod:yorkshire_cap_helmet>, stageName8);
 ItemStages.restrict(<item:magistuarmory:maximilian_boots>, stageName8);
 ItemStages.restrict(<item:marbellous:sodaline_pressure_plate>, stageName8);
+ItemStages.restrict(<item:boatload:bamboo_furnace_raft>, stageName8);
 ItemStages.restrict(<item:marbellous:polished_obsidite_button>, stageName8);
 ItemStages.restrict(<item:marbellous:polished_obsidite_pressure_plate>, stageName8);
 ItemStages.restrict(<item:marbellous:obsidite_button>, stageName8);
