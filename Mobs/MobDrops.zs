@@ -60,6 +60,12 @@ import crafttweaker.api.entity.EntityType;
     .addLootModifier("add_raw_rabbit", CommonLootModifiers.add(<item:minecraft:rabbit>));
 <entitytype:minecraft:rabbit>
     .addLootModifier("add_rabbit_hide", CommonLootModifiers.add(<item:minecraft:rabbit_hide>));
+    // Add skin drops
+<entitytype:minecraft:sheep>
+    .addLootModifier("add_sheep_skin", CommonLootModifiers.add(<item:kapphobins_addons:sheep_skin>));
+
+<entitytype:minecraft:pig>
+    .addLootModifier("add_pig_skin", CommonLootModifiers.add(<item:kapphobins_addons:pig_skin>));
 // Author: Kapphobin
 // Project: Wilderness Forged
 // ID: KP-2026-CORE-001
