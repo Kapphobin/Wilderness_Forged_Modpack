@@ -351,7 +351,7 @@ ItemStages.restrict(<item:minecraft:barrier>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:structure_void>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:structure_block>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:jigsaw>, stageUnobtainable);
-
+ItemStages.restrict(<item:superbwarfare:senpai_spawn_egg>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:command_block_minecart>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:repeating_command_block>, stageUnobtainable);
 ItemStages.restrict(<item:minecraft:chain_command_block>, stageUnobtainable);

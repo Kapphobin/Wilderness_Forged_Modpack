@@ -6,13 +6,69 @@ import mods.itemstages.ItemStages;
 val Test = "Test";  //Lower paleoltichic
 val stone = <tag:items:quark:stone_tool_materials>;
 val air = <item:minecraft:air>;
+val polisher = <item:kapphobins_addons:polishing_stone>;
 val planks = <tag:items:minecraft:planks>;
 val tw = <item:immersiveengineering:treated_wood_horizontal>;
 val stick = <tag:items:forge:rods/wooden>; 
 val saw = <item:kapphobins_addons:diamond_infused_steel_saw>;
+val chisel = <tag:items:kapphobins:chisel>;
+
+// Remove all existing polished stone recipes
+craftingTable.remove(<item:minecraft:polished_granite>);
+craftingTable.remove(<item:minecraft:polished_diorite>);
+craftingTable.remove(<item:minecraft:polished_andesite>);
+craftingTable.remove(<item:minecraft:polished_deepslate>);
+craftingTable.remove(<item:minecraft:polished_blackstone>);
+
+craftingTable.remove(<item:create:polished_cut_scorchia>);
+craftingTable.remove(<item:create:polished_cut_asurine>);
+craftingTable.remove(<item:create:polished_cut_limestone>);
+craftingTable.remove(<item:create:polished_cut_scoria>);
+craftingTable.remove(<item:create:polished_cut_deepslate>);
+craftingTable.remove(<item:create:polished_cut_tuff>);
+craftingTable.remove(<item:create:polished_cut_crimsite>);
+craftingTable.remove(<item:create:polished_cut_calcite>);
+craftingTable.remove(<item:create:polished_cut_granite>);
+craftingTable.remove(<item:create:polished_cut_diorite>);
+craftingTable.remove(<item:create:polished_cut_dripstone>);
+craftingTable.remove(<item:create:polished_cut_andesite>);
+craftingTable.remove(<item:create:polished_cut_veridium>);
+craftingTable.remove(<item:create:polished_cut_ochrum>);
+
+craftingTable.remove(<item:quark:polished_shale>);
+craftingTable.remove(<item:quark:polished_jasper>);
+craftingTable.remove(<item:quark:polished_limestone>);
+craftingTable.remove(<item:quark:polished_myalite>);
+craftingTable.remove(<item:quark:polished_calcite>);
+craftingTable.remove(<item:quark:polished_dripstone>);
+craftingTable.remove(<item:quark:polished_tuff>);
+
+craftingTable.remove(<item:regions_unexplored:polished_chalk>);
+
+craftingTable.remove(<item:marbellous:polished_sodaline>);
+craftingTable.remove(<item:marbellous:polished_obsidite>);
+craftingTable.remove(<item:marbellous:polished_galactite>);
+craftingTable.remove(<item:marbellous:polished_tertrum>);
+craftingTable.remove(<item:marbellous:polished_red_calacatta>);
+craftingTable.remove(<item:marbellous:polished_emperador>);
+craftingTable.remove(<item:marbellous:polished_cappucine>);
+craftingTable.remove(<item:marbellous:polished_dark_serpentine>);
+craftingTable.remove(<item:marbellous:polished_amethite>);
+craftingTable.remove(<item:marbellous:polished_black_carrara>);
+craftingTable.remove(<item:marbellous:polished_blue_carrara>);
+craftingTable.remove(<item:marbellous:polished_rose_carrara>);
+craftingTable.remove(<item:marbellous:polished_gold_carrara>);
+craftingTable.remove(<item:marbellous:polished_carrara>);
 
 // ImmersiveGeology Transparent Concrete
 craftingTable.addShaped("trconcrete_stairs_saw", <item:immersivegeology:stairs_trconcrete>*3, [[<item:immersivegeology:storage_block_trconcrete>, saw],[<item:immersivegeology:storage_block_trconcrete>, <item:immersivegeology:storage_block_trconcrete>]]);
+
+craftingTable.addShaped("polishing_stone", <item:kapphobins_addons:polishing_stone>, [
+   [<tag:items:quark:stone_tool_materials>, <tag:items:quark:stone_tool_materials>, air],
+   [<tag:items:quark:stone_tool_materials>, <tag:items:quark:stone_tool_materials>, air],
+   [<tag:items:quark:stone_tool_materials>, air, air]
+]);
+
 craftingTable.addShaped("trconcrete_slab_saw", <item:immersivegeology:slab_trconcrete>*8, [
    [air, air, air],
    [air, saw, air],
@@ -1150,8 +1206,6 @@ craftingTable.addShaped("white_shingles_slab_saw", <item:quark:white_shingles_sl
    [air, saw, air],
    [<item:quark:white_shingles>, <item:quark:white_shingles>, <item:quark:white_shingles>]
 ]);
-
-// Quark Blue Shingles
 craftingTable.addShaped("blue_shingles_stairs_saw", <item:quark:blue_shingles_stairs>*3, [[<item:quark:blue_shingles>, saw],[<item:quark:blue_shingles>, <item:quark:blue_shingles>]]);
 craftingTable.addShaped("blue_shingles_slab_saw", <item:quark:blue_shingles_slab>*8, [
    [air, air, air],
@@ -1553,6 +1607,179 @@ craftingTable.addShaped("blackstone_slab_saw", <item:minecraft:blackstone_slab>*
    [air, saw, air],
    [<item:minecraft:blackstone>, <item:minecraft:blackstone>, <item:minecraft:blackstone>]
 ]);
+craftingTable.addShaped("stone_chisel_pressure_plate", <item:minecraft:stone_pressure_plate>*5, [[chisel, air],[<item:minecraft:stone>, <item:minecraft:stone>]]);
+
+craftingTable.addShaped("stone_chisel_button", <item:minecraft:stone_button>*10, [[chisel, air],[air, <item:minecraft:stone>]]);
+
+// Polished Dark Serpentine
+craftingTable.addShaped("polished_dark_serpentine_pressure_plate_chisel", <item:marbellous:polished_dark_serpentine_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_dark_serpentine>, <item:marbellous:polished_dark_serpentine>]]);
+craftingTable.addShaped("polished_dark_serpentine_button_chisel", <item:marbellous:polished_dark_serpentine_button>*10, [[chisel, air],[air, <item:marbellous:polished_dark_serpentine>]]);
+
+// Dark Serpentine
+craftingTable.addShaped("dark_serpentine_pressure_plate_chisel", <item:marbellous:dark_serpentine_pressure_plate>*5, [[chisel, air],[<item:marbellous:dark_serpentine>, <item:marbellous:dark_serpentine>]]);
+craftingTable.addShaped("dark_serpentine_button_chisel", <item:marbellous:dark_serpentine_button>*10, [[chisel, air],[air, <item:marbellous:dark_serpentine>]]);
+
+// Polished Cappucine
+craftingTable.addShaped("polished_cappucine_pressure_plate_chisel", <item:marbellous:polished_cappucine_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_cappucine>, <item:marbellous:polished_cappucine>]]);
+craftingTable.addShaped("polished_cappucine_button_chisel", <item:marbellous:polished_cappucine_button>*10, [[chisel, air],[air, <item:marbellous:polished_cappucine>]]);
+
+// Cappucine
+craftingTable.addShaped("cappucine_pressure_plate_chisel", <item:marbellous:cappucine_pressure_plate>*5, [[chisel, air],[<item:marbellous:cappucine>, <item:marbellous:cappucine>]]);
+craftingTable.addShaped("cappucine_button_chisel", <item:marbellous:cappucine_button>*10, [[chisel, air],[air, <item:marbellous:cappucine>]]);
+
+// Polished Amethite
+craftingTable.addShaped("polished_amethite_pressure_plate_chisel", <item:marbellous:polished_amethite_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_amethite>, <item:marbellous:polished_amethite>]]);
+craftingTable.addShaped("polished_amethite_button_chisel", <item:marbellous:polished_amethite_button>*10, [[chisel, air],[air, <item:marbellous:polished_amethite>]]);
+
+// Amethite
+craftingTable.addShaped("amethite_pressure_plate_chisel", <item:marbellous:amethite_pressure_plate>*5, [[chisel, air],[<item:marbellous:amethite>, <item:marbellous:amethite>]]);
+craftingTable.addShaped("amethite_button_chisel", <item:marbellous:amethite_button>*10, [[chisel, air],[air, <item:marbellous:amethite>]]);
+
+// Polished Black Carrara
+craftingTable.addShaped("polished_black_carrara_pressure_plate_chisel", <item:marbellous:polished_black_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_black_carrara>, <item:marbellous:polished_black_carrara>]]);
+craftingTable.addShaped("polished_black_carrara_button_chisel", <item:marbellous:polished_black_carrara_button>*10, [[chisel, air],[air, <item:marbellous:polished_black_carrara>]]);
+
+// Black Carrara
+craftingTable.addShaped("black_carrara_pressure_plate_chisel", <item:marbellous:black_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:black_carrara>, <item:marbellous:black_carrara>]]);
+craftingTable.addShaped("black_carrara_button_chisel", <item:marbellous:black_carrara_button>*10, [[chisel, air],[air, <item:marbellous:black_carrara>]]);
+
+// Polished Blue Carrara
+craftingTable.addShaped("polished_blue_carrara_pressure_plate_chisel", <item:marbellous:polished_blue_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_blue_carrara>, <item:marbellous:polished_blue_carrara>]]);
+craftingTable.addShaped("polished_blue_carrara_button_chisel", <item:marbellous:polished_blue_carrara_button>*10, [[chisel, air],[air, <item:marbellous:polished_blue_carrara>]]);
+
+// Blue Carrara
+craftingTable.addShaped("blue_carrara_pressure_plate_chisel", <item:marbellous:blue_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:blue_carrara>, <item:marbellous:blue_carrara>]]);
+craftingTable.addShaped("blue_carrara_button_chisel", <item:marbellous:blue_carrara_button>*10, [[chisel, air],[air, <item:marbellous:blue_carrara>]]);
+
+// Polished Rose Carrara
+craftingTable.addShaped("polished_rose_carrara_pressure_plate_chisel", <item:marbellous:polished_rose_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_rose_carrara>, <item:marbellous:polished_rose_carrara>]]);
+craftingTable.addShaped("polished_rose_carrara_button_chisel", <item:marbellous:polished_rose_carrara_button>*10, [[chisel, air],[air, <item:marbellous:polished_rose_carrara>]]);
+
+// Rose Carrara
+craftingTable.addShaped("rose_carrara_pressure_plate_chisel", <item:marbellous:rose_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:rose_carrara>, <item:marbellous:rose_carrara>]]);
+craftingTable.addShaped("rose_carrara_button_chisel", <item:marbellous:rose_carrara_button>*10, [[chisel, air],[air, <item:marbellous:rose_carrara>]]);
+
+// Polished Emperador
+craftingTable.addShaped("polished_emperador_pressure_plate_chisel", <item:marbellous:polished_emperador_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_emperador>, <item:marbellous:polished_emperador>]]);
+craftingTable.addShaped("polished_emperador_button_chisel", <item:marbellous:polished_emperador_button>*10, [[chisel, air],[air, <item:marbellous:polished_emperador>]]);
+
+// Emperador
+craftingTable.addShaped("emperador_pressure_plate_chisel", <item:marbellous:emperador_pressure_plate>*5, [[chisel, air],[<item:marbellous:emperador>, <item:marbellous:emperador>]]);
+craftingTable.addShaped("emperador_button_chisel", <item:marbellous:emperador_button>*10, [[chisel, air],[air, <item:marbellous:emperador>]]);
+
+// Polished Gold Carrara
+craftingTable.addShaped("polished_gold_carrara_pressure_plate_chisel", <item:marbellous:polished_gold_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_gold_carrara>, <item:marbellous:polished_gold_carrara>]]);
+craftingTable.addShaped("polished_gold_carrara_button_chisel", <item:marbellous:polished_gold_carrara_button>*10, [[chisel, air],[air, <item:marbellous:polished_gold_carrara>]]);
+
+// Gold Carrara
+craftingTable.addShaped("gold_carrara_pressure_plate_chisel", <item:marbellous:gold_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:gold_carrara>, <item:marbellous:gold_carrara>]]);
+craftingTable.addShaped("gold_carrara_button_chisel", <item:marbellous:gold_carrara_button>*10, [[chisel, air],[air, <item:marbellous:gold_carrara>]]);
+
+// Polished Carrara
+craftingTable.addShaped("polished_carrara_pressure_plate_chisel", <item:marbellous:polished_carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_carrara>, <item:marbellous:polished_carrara>]]);
+craftingTable.addShaped("polished_carrara_button_chisel", <item:marbellous:polished_carrara_button>*10, [[chisel, air],[air, <item:marbellous:polished_carrara>]]);
+
+// Carrara
+craftingTable.addShaped("carrara_pressure_plate_chisel", <item:marbellous:carrara_pressure_plate>*5, [[chisel, air],[<item:marbellous:carrara>, <item:marbellous:carrara>]]);
+craftingTable.addShaped("carrara_button_chisel", <item:marbellous:carrara_button>*10, [[chisel, air],[air, <item:marbellous:carrara>]]);
+
+// Polished Blackstone
+craftingTable.addShaped("polished_blackstone_pressure_plate_chisel", <item:minecraft:polished_blackstone_pressure_plate>*5, [[chisel, air],[<item:minecraft:polished_blackstone>, <item:minecraft:polished_blackstone>]]);
+craftingTable.addShaped("polished_blackstone_button_chisel", <item:minecraft:polished_blackstone_button>*10, [[chisel, air],[air, <item:minecraft:polished_blackstone>]]);
+
+// Stone
+craftingTable.addShaped("stone_pressure_plate_chisel", <item:minecraft:stone_pressure_plate>*5, [[chisel, air],[<item:minecraft:stone>, <item:minecraft:stone>]]);
+craftingTable.addShaped("stone_button_chisel", <item:minecraft:stone_button>*10, [[chisel, air],[air, <item:minecraft:stone>]]);
+
+// Polished Red Calacatta
+craftingTable.addShaped("polished_red_calacatta_pressure_plate_chisel", <item:marbellous:polished_red_calacatta_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_red_calacatta>, <item:marbellous:polished_red_calacatta>]]);
+craftingTable.addShaped("polished_red_calacatta_button_chisel", <item:marbellous:polished_red_calacatta_button>*10, [[chisel, air],[air, <item:marbellous:polished_red_calacatta>]]);
+
+// Red Calacatta
+craftingTable.addShaped("red_calacatta_pressure_plate_chisel", <item:marbellous:red_calacatta_pressure_plate>*5, [[chisel, air],[<item:marbellous:red_calacatta>, <item:marbellous:red_calacatta>]]);
+craftingTable.addShaped("red_calacatta_button_chisel", <item:marbellous:red_calacatta_button>*10, [[chisel, air],[air, <item:marbellous:red_calacatta>]]);
+
+// Polished Tertrum
+craftingTable.addShaped("polished_tertrum_pressure_plate_chisel", <item:marbellous:polished_tertrum_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_tertrum>, <item:marbellous:polished_tertrum>]]);
+craftingTable.addShaped("polished_tertrum_button_chisel", <item:marbellous:polished_tertrum_button>*10, [[chisel, air],[air, <item:marbellous:polished_tertrum>]]);
+
+// Tertrum
+craftingTable.addShaped("tertrum_pressure_plate_chisel", <item:marbellous:tertrum_pressure_plate>*5, [[chisel, air],[<item:marbellous:tertrum>, <item:marbellous:tertrum>]]);
+craftingTable.addShaped("tertrum_button_chisel", <item:marbellous:tertrum_button>*10, [[chisel, air],[air, <item:marbellous:tertrum>]]);
+
+// Polished Sodaline
+craftingTable.addShaped("polished_sodaline_pressure_plate_chisel", <item:marbellous:polished_sodaline_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_sodaline>, <item:marbellous:polished_sodaline>]]);
+craftingTable.addShaped("polished_sodaline_button_chisel", <item:marbellous:polished_sodaline_button>*10, [[chisel, air],[air, <item:marbellous:polished_sodaline>]]);
+
+// Sodaline
+craftingTable.addShaped("sodaline_pressure_plate_chisel", <item:marbellous:sodaline_pressure_plate>*5, [[chisel, air],[<item:marbellous:sodaline>, <item:marbellous:sodaline>]]);
+craftingTable.addShaped("sodaline_button_chisel", <item:marbellous:sodaline_button>*10, [[chisel, air],[air, <item:marbellous:sodaline>]]);
+
+// Polished Obsidite
+craftingTable.addShaped("polished_obsidite_pressure_plate_chisel", <item:marbellous:polished_obsidite_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_obsidite>, <item:marbellous:polished_obsidite>]]);
+craftingTable.addShaped("polished_obsidite_button_chisel", <item:marbellous:polished_obsidite_button>*10, [[chisel, air],[air, <item:marbellous:polished_obsidite>]]);
+
+// Obsidite
+craftingTable.addShaped("obsidite_pressure_plate_chisel", <item:marbellous:obsidite_pressure_plate>*5, [[chisel, air],[<item:marbellous:obsidite>, <item:marbellous:obsidite>]]);
+craftingTable.addShaped("obsidite_button_chisel", <item:marbellous:obsidite_button>*10, [[chisel, air],[air, <item:marbellous:obsidite>]]);
+
+// Polished Galactite
+craftingTable.addShaped("polished_galactite_pressure_plate_chisel", <item:marbellous:polished_galactite_pressure_plate>*5, [[chisel, air],[<item:marbellous:polished_galactite>, <item:marbellous:polished_galactite>]]);
+craftingTable.addShaped("polished_galactite_button_chisel", <item:marbellous:polished_galactite_button>*10, [[chisel, air],[air, <item:marbellous:polished_galactite>]]);
+
+// Galactite
+craftingTable.addShaped("galactite_pressure_plate_chisel", <item:marbellous:galactite_pressure_plate>*5, [[chisel, air],[<item:marbellous:galactite>, <item:marbellous:galactite>]]);
+craftingTable.addShaped("galactite_button_chisel", <item:marbellous:galactite_button>*10, [[chisel, air],[air, <item:marbellous:galactite>]]);
+// Vanilla
+craftingTable.addShaped("polished_granite", <item:minecraft:polished_granite>, [[<item:minecraft:granite>, polisher]]);
+craftingTable.addShaped("polished_diorite", <item:minecraft:polished_diorite>, [[<item:minecraft:diorite>, polisher]]);
+craftingTable.addShaped("polished_andesite", <item:minecraft:polished_andesite>, [[<item:minecraft:andesite>, polisher]]);
+craftingTable.addShaped("polished_deepslate", <item:minecraft:polished_deepslate>, [[<item:minecraft:deepslate>, polisher]]);
+craftingTable.addShaped("polished_blackstone", <item:minecraft:polished_blackstone>, [[<item:minecraft:blackstone>, polisher]]);
+
+// Create
+craftingTable.addShaped("polished_cut_scorchia", <item:create:polished_cut_scorchia>, [[<item:create:scorchia>, polisher]]);
+craftingTable.addShaped("polished_cut_asurine", <item:create:polished_cut_asurine>, [[<item:create:asurine>, polisher]]);
+craftingTable.addShaped("polished_cut_limestone", <item:create:polished_cut_limestone>, [[<item:create:limestone>, polisher]]);
+craftingTable.addShaped("polished_cut_scoria", <item:create:polished_cut_scoria>, [[<item:create:scoria>, polisher]]);
+craftingTable.addShaped("polished_cut_deepslate", <item:create:polished_cut_deepslate>, [[<item:create:cut_deepslate>, polisher]]);
+craftingTable.addShaped("polished_cut_tuff", <item:create:polished_cut_tuff>, [[<item:minecraft:tuff>, polisher]]);
+craftingTable.addShaped("polished_cut_crimsite", <item:create:polished_cut_crimsite>, [[<item:create:crimsite>, polisher]]);
+craftingTable.addShaped("polished_cut_calcite", <item:create:polished_cut_calcite>, [[<item:minecraft:calcite>, polisher]]);
+craftingTable.addShaped("polished_cut_granite", <item:create:polished_cut_granite>, [[<item:minecraft:granite>, polisher]]);
+craftingTable.addShaped("polished_cut_diorite", <item:create:polished_cut_diorite>, [[<item:minecraft:diorite>, polisher]]);
+craftingTable.addShaped("polished_cut_dripstone", <item:create:polished_cut_dripstone>, [[<item:minecraft:dripstone_block>, polisher]]);
+craftingTable.addShaped("polished_cut_andesite", <item:create:polished_cut_andesite>, [[<item:minecraft:andesite>, polisher]]);
+craftingTable.addShaped("polished_cut_veridium", <item:create:polished_cut_veridium>, [[<item:create:veridium>, polisher]]);
+craftingTable.addShaped("polished_cut_ochrum", <item:create:polished_cut_ochrum>, [[<item:create:ochrum>, polisher]]);
+
+// Quark
+craftingTable.addShaped("polished_shale", <item:quark:polished_shale>, [[<item:quark:shale>, polisher]]);
+craftingTable.addShaped("polished_jasper", <item:quark:polished_jasper>, [[<item:quark:jasper>, polisher]]);
+craftingTable.addShaped("polished_limestone", <item:quark:polished_limestone>, [[<item:quark:limestone>, polisher]]);
+craftingTable.addShaped("polished_myalite", <item:quark:polished_myalite>, [[<item:quark:myalite>, polisher]]);
+craftingTable.addShaped("polished_calcite_quark", <item:quark:polished_calcite>, [[<item:minecraft:calcite>, polisher]]);
+craftingTable.addShaped("polished_dripstone_quark", <item:quark:polished_dripstone>, [[<item:minecraft:dripstone_block>, polisher]]);
+craftingTable.addShaped("polished_tuff_quark", <item:quark:polished_tuff>, [[<item:minecraft:tuff>, polisher]]);
+
+// Regions Unexplored
+craftingTable.addShaped("polished_chalk", <item:regions_unexplored:polished_chalk>, [[<item:regions_unexplored:chalk>, polisher]]);
+
+// Marbellous
+craftingTable.addShaped("polished_sodaline", <item:marbellous:polished_sodaline>, [[<item:marbellous:sodaline>, polisher]]);
+craftingTable.addShaped("polished_obsidite", <item:marbellous:polished_obsidite>, [[<item:marbellous:obsidite>, polisher]]);
+craftingTable.addShaped("polished_galactite", <item:marbellous:polished_galactite>, [[<item:marbellous:galactite>, polisher]]);
+craftingTable.addShaped("polished_tertrum", <item:marbellous:polished_tertrum>, [[<item:marbellous:tertrum>, polisher]]);
+craftingTable.addShaped("polished_red_calacatta", <item:marbellous:polished_red_calacatta>, [[<item:marbellous:red_calacatta>, polisher]]);
+craftingTable.addShaped("polished_emperador", <item:marbellous:polished_emperador>, [[<item:marbellous:emperador>, polisher]]);
+craftingTable.addShaped("polished_cappucine", <item:marbellous:polished_cappucine>, [[<item:marbellous:cappucine>, polisher]]);
+craftingTable.addShaped("polished_dark_serpentine", <item:marbellous:polished_dark_serpentine>, [[<item:marbellous:dark_serpentine>, polisher]]);
+craftingTable.addShaped("polished_amethite", <item:marbellous:polished_amethite>, [[<item:marbellous:amethite>, polisher]]);
+craftingTable.addShaped("polished_black_carrara", <item:marbellous:polished_black_carrara>, [[<item:marbellous:black_carrara>, polisher]]);
+craftingTable.addShaped("polished_blue_carrara", <item:marbellous:polished_blue_carrara>, [[<item:marbellous:blue_carrara>, polisher]]);
+craftingTable.addShaped("polished_rose_carrara", <item:marbellous:polished_rose_carrara>, [[<item:marbellous:rose_carrara>, polisher]]);
+craftingTable.addShaped("polished_gold_carrara", <item:marbellous:polished_gold_carrara>, [[<item:marbellous:gold_carrara>, polisher]]);
+craftingTable.addShaped("polished_carrara", <item:marbellous:polished_carrara>, [[<item:marbellous:carrara>, polisher]]);
 // Author: Kapphobin
 // Project: Wilderness Forged
 // ID: KP-2026-CORE-001
